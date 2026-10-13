@@ -7,8 +7,25 @@
   },
   "escenas": [
     {
-      "capitulo": "Saludo",
-      "kicker": "EMPEZAMOS",
+      "capitulo": "Bienvenida y objetivo",
+      "kicker": "LECCIÓN 1 · INGLÉS PRÁCTICO",
+      "bloques": [
+        {
+          "texto": "INTRODUCE YOURSELF",
+          "estilo": "principal"
+        },
+        {
+          "texto": "Preséntate en inglés",
+          "estilo": "secundario"
+        }
+      ],
+      "texto": "Bienvenida y objetivo de la lección",
+      "voz": "¡Hola! Bienvenido o bienvenida a esta lección de inglés práctico. Hoy vas a aprender a presentarte de una manera sencilla y natural. Vamos a practicar cómo saludar, decir tu nombre, preguntar el nombre de otra persona, explicar de dónde eres y despedirte. No necesitas saber inglés de antemano. Escucha cada frase, entiende su significado y repítela en voz alta. No tengas miedo de equivocarte: aprender un idioma requiere práctica. Durante la lección escucharás frases en inglés, su traducción al español y una guía aproximada de pronunciación. La pronunciación escrita es solo una ayuda; intenta también imitar el sonido que escuchas. Al final haremos una conversación completa. Si puedes, pausa el vídeo cuando lo necesites y repite cada ejemplo varias veces. ¡Vamos a comenzar!",
+      "pausa": 4
+    },
+    {
+      "capitulo": "Cómo saludar",
+      "kicker": "PASO 1 · SALUDAR",
       "bloques": [
         {
           "texto": "Hello!",
@@ -17,14 +34,20 @@
         {
           "texto": "¡Hola!",
           "estilo": "secundario"
+        },
+        {
+          "texto": "Jelóu",
+          "estilo": "nota"
         }
       ],
-      "texto": "Hello. Hoy vamos a aprender a presentarnos en inglés.",
-      "pausa": 2
+      "texto": "Hello significa hola",
+      "voz": "La primera palabra es Hello. Significa hola y funciona en muchas situaciones, tanto formales como informales. Puedes usarla cuando llegas a un lugar, conoces a alguien o comienzas una conversación. Escucha: Hello. Ahora repite: Hello. Muy bien. También existe una forma más corta y casual: Hi. Hi significa igualmente hola y es muy común entre amigos, compañeros y personas de tu edad. Escucha la diferencia: Hello. Hi. Ahora repite las dos palabras. Primero, Hello. Después, Hi. La pronunciación aproximada de Hello es jelóu, con la fuerza al final. La de Hi suena como jai. No necesitas pronunciar perfecto desde el primer intento. Lo importante es hablar con claridad y acostumbrar el oído al idioma. Vamos a practicar una vez más: Hello. Hi. Ahora di ambas palabras en voz alta sin mirar la pantalla.",
+      "pausa": 5,
+      "practica": true
     },
     {
       "capitulo": "Decir tu nombre",
-      "kicker": "FRASE 1",
+      "kicker": "PASO 2 · TU NOMBRE",
       "bloques": [
         {
           "texto": "Hi, I'm Ana.",
@@ -33,15 +56,42 @@
         {
           "texto": "Hola, soy Ana.",
           "estilo": "secundario"
+        },
+        {
+          "texto": "Jai, aim Ana",
+          "estilo": "nota"
         }
       ],
-      "texto": "Hi, I'm Ana. Ahora repite la frase usando tu propio nombre.",
-      "pausa": 5,
+      "texto": "Hi, I'm Ana. Hola, soy Ana.",
+      "voz": "Ahora vamos a decir nuestro nombre. La frase es: Hi, I'm Ana. En español significa: Hola, soy Ana. Escucha con atención: Hi, I'm Ana. La expresión I'm es una forma corta de I am. I significa yo, y am es una forma del verbo ser o estar. En esta presentación, I'm significa soy. Puedes cambiar Ana por tu propio nombre. Por ejemplo: Hi, I'm Carlos. Hi, I'm Maria. Hi, I'm David. Si tu nombre es largo, dilo despacio y con confianza. Ahora te toca a ti. Primero escucha otra vez: Hi, I'm Ana. Después sustituye Ana por tu nombre. Haz una pausa y dilo en voz alta. Muy bien. Repítelo una segunda vez, intentando unir las palabras de forma natural: Hi, I'm, seguido de tu nombre. Esta frase sencilla te servirá cada vez que conozcas a alguien nuevo.",
+      "pausa": 7,
       "practica": true
     },
     {
-      "capitulo": "Mucho gusto",
-      "kicker": "FRASE 2",
+      "capitulo": "Preguntar el nombre",
+      "kicker": "PASO 3 · PREGUNTAR",
+      "bloques": [
+        {
+          "texto": "What's your name?",
+          "estilo": "principal"
+        },
+        {
+          "texto": "¿Cómo te llamas?",
+          "estilo": "secundario"
+        },
+        {
+          "texto": "Uats yor neim",
+          "estilo": "nota"
+        }
+      ],
+      "texto": "What's your name? ¿Cómo te llamas?",
+      "voz": "Cuando ya sabes decir tu nombre, quizá quieras preguntarle el suyo a otra persona. En inglés puedes decir: What's your name? Significa: ¿Cómo te llamas? Escucha la frase completa: What's your name? Ahora repite lentamente: What's your name? La palabra What's es una contracción de What is. Your significa tu o tus, y name significa nombre. No hace falta traducir cada palabra por separado mientras hablas; aprende la frase completa como una unidad. Imagina que conoces a una persona nueva. Tú dices: Hi, I'm Ana. Luego preguntas: What's your name? La otra persona puede responder: I'm Luis. Vamos a practicar las dos partes. Di primero: Hi, I'm, y tu nombre. Después pregunta: What's your name? Deja un pequeño espacio entre las dos frases. Repite el ejemplo completo otra vez. Excelente: ya puedes presentarte y preguntar el nombre de alguien.",
+      "pausa": 6,
+      "practica": true
+    },
+    {
+      "capitulo": "Responder y decir mucho gusto",
+      "kicker": "PASO 4 · SER AMABLE",
       "bloques": [
         {
           "texto": "Nice to meet you.",
@@ -50,15 +100,20 @@
         {
           "texto": "Mucho gusto.",
           "estilo": "secundario"
+        },
+        {
+          "texto": "Nais tu mit yu",
+          "estilo": "nota"
         }
       ],
-      "texto": "Nice to meet you. Significa mucho gusto. Repítelo en voz alta.",
-      "pausa": 5,
+      "texto": "Nice to meet you. Mucho gusto.",
+      "voz": "Una expresión muy útil cuando conoces a alguien es: Nice to meet you. En español significa: Mucho gusto o encantado de conocerte. Escucha: Nice to meet you. Ahora repite despacio: Nice to meet you. Nice se pronuncia aproximadamente nais. Meet suena parecido a miit, alargando un poco la vocal. You suena como iu. Intenta unir las tres partes: Nice to meet you. Esta frase se usa después de una presentación. Por ejemplo, una persona dice: Hi, I'm Ana. La otra responde: Hi, I'm Luis. Nice to meet you. También puedes contestar: Nice to meet you, too. Eso significa: Mucho gusto también. No te preocupes si al principio la frase parece larga. Divídela en tres partes, repítelas y luego únelas. Ahora di la frase completa dos veces: Nice to meet you. Nice to meet you, too. Muy bien.",
+      "pausa": 7,
       "practica": true
     },
     {
-      "capitulo": "De dónde eres",
-      "kicker": "FRASE 3",
+      "capitulo": "Decir de dónde eres",
+      "kicker": "PASO 5 · TU PAÍS",
       "bloques": [
         {
           "texto": "I'm from Puerto Rico.",
@@ -69,30 +124,97 @@
           "estilo": "secundario"
         }
       ],
-      "texto": "I'm from Puerto Rico. Cambia Puerto Rico por tu país y repite.",
-      "pausa": 5,
+      "texto": "I'm from Puerto Rico.",
+      "voz": "Ahora vamos a decir de dónde somos. La frase es: I'm from Puerto Rico. Significa: Soy de Puerto Rico. Puedes reemplazar Puerto Rico por el nombre de tu país, ciudad o lugar de origen, según lo que quieras contar. Por ejemplo: I'm from Mexico. Soy de México. I'm from Colombia. Soy de Colombia. I'm from Spain. Soy de España. Escucha otra vez: I'm from Puerto Rico. La palabra from significa de o desde. Practica primero la frase con Puerto Rico y después usa tu propio lugar. No tienes que dar tu dirección ni información personal; basta con decir un país o una ciudad si te sientes cómodo. Ahora repite: I'm from Puerto Rico. Muy bien. Cambia el nombre del lugar por el tuyo y vuelve a decir la frase. Recuerda que puedes hablar despacio. Es mejor pronunciar cada palabra con claridad que intentar hablar demasiado rápido.",
+      "pausa": 7,
       "practica": true
     },
     {
-      "capitulo": "Tu turno",
-      "kicker": "PRACTICA",
+      "capitulo": "Cómo despedirte",
+      "kicker": "PASO 6 · DESPEDIDA",
       "bloques": [
         {
-          "texto": "Hi, I'm ...",
+          "texto": "It was nice meeting you.",
           "estilo": "principal"
         },
         {
-          "texto": "I'm from ...",
+          "texto": "Fue un gusto conocerte.",
+          "estilo": "secundario"
+        },
+        {
+          "texto": "Goodbye! · Bye!",
+          "estilo": "nota"
+        }
+      ],
+      "texto": "It was nice meeting you. Goodbye. Bye.",
+      "voz": "También es útil saber terminar una conversación. Goodbye significa adiós y suele sonar un poco más formal. Bye es una despedida corta y muy común. Escucha: Goodbye. Bye. Repite cada una. Si quieres decir que fue un gusto conocer a alguien, puedes usar: It was nice meeting you. Significa: Fue un gusto conocerte. Es una frase más larga, así que practícala poco a poco. Primero: It was nice. Después: meeting you. Ahora une las dos partes: It was nice meeting you. En una conversación sencilla puedes decir: Nice to meet you. Y al terminar, puedes decir: It was nice meeting you. Goodbye. No necesitas usar todas estas frases cada vez. Elige la que te resulte más cómoda. Vamos a repetir la despedida corta: Bye. Goodbye. Muy bien, ya tienes una forma de empezar y terminar una conversación en inglés.",
+      "pausa": 6,
+      "practica": true
+    },
+    {
+      "capitulo": "Conversación de ejemplo",
+      "kicker": "ESCUCHA Y PRACTICA",
+      "bloques": [
+        {
+          "texto": "Hi, I'm Ana.",
           "estilo": "principal"
+        },
+        {
+          "texto": "What's your name?",
+          "estilo": "secundario"
+        },
+        {
+          "texto": "Nice to meet you!",
+          "estilo": "nota"
+        }
+      ],
+      "texto": "Conversación completa de ejemplo",
+      "voz": "Vamos a escuchar una conversación completa. Imagina que Ana conoce a Luis por primera vez. Ana dice: Hi, I'm Ana. Luis responde: Hi, I'm Luis. Ana pregunta: What's your name? Si Luis ya dijo su nombre, esta pregunta no sería necesaria, así que vamos a hacerlo de una forma más natural. Ana dice: Hi, I'm Ana. Luis responde: Hi, I'm Luis. Ana dice: Nice to meet you. Luis responde: Nice to meet you, too. Después Ana comenta: I'm from Puerto Rico. Luis puede contestar: That's great! Esa expresión significa: ¡Qué bien! Por último, cuando se van, pueden decir: It was nice meeting you. Bye! Escucha otra vez las frases clave y repítelas después de cada una. Hi, I'm Ana. What's your name? Nice to meet you. I'm from Puerto Rico. It was nice meeting you. Bye! Ahora imagina que tú eres una de las personas. Cambia el nombre y el lugar por los tuyos. Lo importante es que puedas usar las frases para hablar de verdad.",
+      "pausa": 8,
+      "practica": true
+    },
+    {
+      "capitulo": "Práctica guiada",
+      "kicker": "AHORA TE TOCA A TI",
+      "bloques": [
+        {
+          "texto": "Hi, I'm …",
+          "estilo": "principal"
+        },
+        {
+          "texto": "I'm from …",
+          "estilo": "secundario"
         },
         {
           "texto": "Nice to meet you.",
           "estilo": "nota"
         }
       ],
-      "texto": "Ahora preséntate completo. Di tu nombre, de dónde eres y termina diciendo Nice to meet you.",
-      "pausa": 8,
+      "texto": "Practica tu presentación",
+      "voz": "Ahora haremos una práctica guiada. No repitas solamente en tu mente: dilo en voz alta. Primera frase: Hi, I'm, y tu nombre. Pausa un momento y dilo. Segunda frase: I'm from, y tu país o ciudad. Ahora dilo con tu información. Tercera frase: Nice to meet you. Repite la frase completa. Vamos a unirlo todo: Hi, I'm, tu nombre. I'm from, tu lugar. Nice to meet you. Excelente. Ahora imagina que la otra persona responde: Hi, I'm Alex. Nice to meet you, too. Puedes contestar con una sonrisa y continuar la conversación. Repite tu presentación completa una segunda vez, sin apresurarte. Si te equivocas, vuelve a empezar; no es un problema. Cada repetición ayuda a que las frases te salgan más naturales. Intenta practicar esta presentación durante unos minutos cada día. Cuando puedas decirla sin leer, habrás dado un buen primer paso para comunicarte en inglés.",
+      "pausa": 10,
       "practica": true
+    },
+    {
+      "capitulo": "Repaso y cierre",
+      "kicker": "¡LO LOGRASTE!",
+      "bloques": [
+        {
+          "texto": "Hello · I'm …",
+          "estilo": "principal"
+        },
+        {
+          "texto": "I'm from …",
+          "estilo": "secundario"
+        },
+        {
+          "texto": "Nice to meet you!",
+          "estilo": "nota"
+        }
+      ],
+      "texto": "Repaso final",
+      "voz": "Vamos a repasar lo que aprendiste hoy. Hello y Hi sirven para saludar. Hi, I'm Ana significa Hola, soy Ana. What's your name? significa ¿Cómo te llamas? Nice to meet you significa Mucho gusto. I'm from Puerto Rico significa Soy de Puerto Rico, y puedes cambiar el lugar por el tuyo. Bye y Goodbye sirven para despedirte. Ya tienes las herramientas básicas para iniciar una conversación corta en inglés. Recuerda que no necesitas memorizarlo todo de una vez. Escucha, repite, practica y vuelve a la lección cuando lo necesites. Si quieres mejorar tu pronunciación, escucha cada frase y trata de imitar el ritmo, no solo los sonidos individuales. Tu tarea es presentarte tres veces en voz alta, cada vez con un poco más de confianza. Gracias por practicar conmigo. ¡Nos vemos en la próxima lección! Bye!",
+      "pausa": 5
     }
   ]
 }
