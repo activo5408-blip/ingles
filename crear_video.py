@@ -161,13 +161,13 @@ def main():
     for i,sc in enumerate(scenes,1):
         scene_text=" ".join(str(sc.get("voz",sc.get("texto",""))).split())
         (texts/f"{i:02d}.txt").write_text(scene_text+"\n",encoding="utf-8")
+        seg=tmp/f"{i:02d}.mp4"; dur=durations[i-1]
         sp=slides/f"{i:02d}.png"; render_slide(sc,title,sp,hide_blocks=True)
         ass_path=tmp/f"karaoke_{i:02d}.ass"
         has_karaoke=karaoke_ass(sc,dur,ass_path)
         if not has_karaoke:
             render_slide(sc,title,sp)
         if sc.get("practica"): render_slide(sc,title,slides/f"{i:02d}-practica.png",True)
-        seg=tmp/f"{i:02d}.mp4"; dur=durations[i-1]
         filters = f"ass={ass_path.relative_to(ROOT).as_posix()},format=yuv420p" if has_karaoke else "format=yuv420p"
         run(["ffmpeg","-y","-loop","1","-framerate","25","-i",str(sp),
              "-f","lavfi","-i","anullsrc=r=44100:cl=stereo","-t",f"{dur:.3f}",
