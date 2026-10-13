@@ -81,7 +81,7 @@ def main():
             pause=float(sc.get("pausa",0.8))
             seg=tmp/f"{i:02d}.mp4"
             run(["ffmpeg","-y","-loop","1","-framerate","25","-i",str(sp),"-i",str(apath),
-                 "-f","lavfi","-t",str(pause)," -i","anullsrc=r=44100:cl=stereo",
+                 "-f","lavfi","-t",str(pause),"-i","anullsrc=r=44100:cl=stereo",
                  "-filter_complex",f"[1:a]aresample=44100[a1];[2:a]atrim=duration={pause},asetpts=PTS-STARTPTS[a2];[a1][a2]concat=n=2:v=0:a=1[a]",
                  "-map","0:v","-map","[a]","-t",str(dur+pause),"-vf","format=yuv420p","-c:v","libx264","-preset","veryfast","-pix_fmt","yuv420p","-c:a","aac","-shortest",str(seg)])
             durations.append(dur+pause)
