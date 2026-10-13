@@ -85,7 +85,10 @@ def main():
     # También conserva un TXT por escena como apoyo, pero el principal es el único TXT completo.
     weights=[max(1,len(str(sc.get("voz",sc.get("texto",""))).split())) for sc in scenes]
     narration_file=next((audio/("narracion"+ext) for ext in AUDIO_EXTS if (audio/("narracion"+ext)).exists()),None)
-    target_seconds=duration(narration_file) if narration_file else max(60,float(lesson.get("objetivo_minutos",8))*60)
+    # La duración objetivo manda: si el audio de ElevenLabs no mide exactamente lo mismo,
+    # ajustamos ligeramente su velocidad para que el vídeo final mantenga los 8 minutos.
+    target_seconds=max(60,float(lesson.get("objetivo_minutos",8))*60)
+    narration_duration=duration(narration_file) if narration_file else None
     total_weight=sum(weights)
     durations=[target_seconds*w/total_weight for w in weights]
     segments=[]
@@ -107,8 +110,10 @@ def main():
     run(["ffmpeg","-y","-f","concat","-safe","0","-i",str(concat),"-c","copy",str(silent_video)])
     final=out/f"{name}.mp4"
     if narration_file:
+        tempo=max(0.5,min(2.0,narration_duration/target_seconds))
         run(["ffmpeg","-y","-i",str(silent_video),"-i",str(narration_file),"-map","0:v:0","-map","1:a:0",
-             "-c:v","copy","-c:a","aac","-b:a","192k","-t",f"{target_seconds:.3f}","-movflags","+faststart",str(final)])
+             "-c:v","copy","-filter:a",f"atempo={tempo:.6f}","-c:a","aac","-b:a","192k",
+             "-t",f"{target_seconds:.3f}","-movflags","+faststart",str(final)])
         print(f"Narración incorporada: {narration_file}")
     else:
         shutil.copy2(silent_video,final)
