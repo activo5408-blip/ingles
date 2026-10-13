@@ -1,5 +1,5 @@
 @echo off
-setlocal
+setlocal EnableDelayedExpansion
 cd /d "%~dp0"
 if "%~1"=="" (
   set /p LECCION=Ruta del JSON de la leccion [lecciones\leccion-01.json]: 
