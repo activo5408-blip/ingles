@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Generador de lecciones para Windows. Admite una narración única de ElevenLabs."""
-import argparse, json, subprocess, sys, shutil
+import argparse, json, subprocess, sys, shutil, re, unicodedata
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
@@ -25,10 +25,10 @@ def wrap(draw, text, fnt, max_w):
     if cur: lines.append(cur)
     return lines
 
-def render_slide(scene, title, path, practice=False):
+def render_slide(scene, title, path, practice=False, hide_blocks=False):
     im = Image.new("RGB", (W, H), BG); d = ImageDraw.Draw(im)
     if scene.get("kicker"): d.text((120, 80), scene["kicker"], font=font(38), fill=ACCENT)
-    blocks = scene.get("bloques", [{"texto": scene.get("texto", ""), "estilo": "principal"}])
+    blocks = [] if hide_blocks else scene.get("bloques", [{"texto": scene.get("texto", ""), "estilo": "principal"}])
     colors = {"principal": FG, "secundario": MUTED, "nota": ACCENT, "bueno": "#4ade80", "malo": "#f87171", "dialogo": FG}
     sizes = {"principal": 88, "secundario": 52, "nota": 44, "bueno": 78, "malo": 78, "dialogo": 48}
     rows, total = [], 0
@@ -54,12 +54,78 @@ def render_slide(scene, title, path, practice=False):
     im.save(path)
 
 def run(cmd):
-    p=subprocess.run(cmd,capture_output=True,text=True,encoding="utf-8",errors="replace")
+    p=subprocess.run(cmd,capture_output=True,text=True,encoding="utf-8",errors="replace",cwd=str(ROOT))
     if p.returncode: raise RuntimeError(p.stderr[-2500:] or "Error ejecutando: "+cmd[0])
     return p.stdout.strip()
 
 def duration(path):
     return float(run(["ffprobe","-v","error","-show_entries","format=duration","-of","csv=p=0",str(path)]))
+
+
+def normalize_words(text):
+    text = unicodedata.normalize("NFKD", str(text).lower())
+    text = "".join(ch for ch in text if not unicodedata.combining(ch))
+    return re.findall(r"[a-z0-9]+(?:['’][a-z0-9]+)?", text)
+
+def ass_time(seconds):
+    cs = max(0, int(round(seconds * 100)))
+    h, cs = divmod(cs, 360000)
+    m, cs = divmod(cs, 6000)
+    s, cs = divmod(cs, 100)
+    return f"{h}:{m:02d}:{s:02d}.{cs:02d}"
+
+def karaoke_ass(scene, seconds, path):
+    """Karaoke aproximado: los bloques se iluminan por palabra al ritmo estimado de la narración."""
+    voice = str(scene.get("voz", scene.get("texto", "")))
+    tokens = normalize_words(voice)
+    blocks = scene.get("bloques", [{"texto": scene.get("texto", ""), "estilo": "principal"}])
+    events = []
+    used_until = 0
+    for block in blocks:
+        phrase = str(block.get("texto", "")).strip()
+        words = normalize_words(phrase)
+        if not words:
+            continue
+        found = -1
+        for pos in range(used_until, max(used_until, len(tokens)-len(words)+1)):
+            if tokens[pos:pos+len(words)] == words:
+                found = pos
+                break
+        if found >= 0:
+            start_ratio = found / max(1, len(tokens))
+            used_until = found + len(words)
+        else:
+            start_ratio = min(0.88, len(events) / max(1, len(blocks)) * 0.82)
+        span = max(1.0, seconds * len(words) / max(1, len(tokens)) * 1.18)
+        start = min(max(0, seconds-0.5), start_ratio * seconds)
+        end = min(seconds, start + span)
+        weights = [max(2, len(w)) for w in words]
+        total = sum(weights)
+        tags = []
+        for j, (word, weight) in enumerate(zip(words, weights)):
+            word_dur = max(0.08, (end-start) * weight/total)
+            tags.append(r"{\k%d}%s" % (max(1, int(round(word_dur*100))), word))
+            if j < len(words)-1: tags.append(" ")
+        events.append((start, end, "".join(tags)))
+    header = """[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Karaoke,Arial,72,&H0000D7FF,&H00FFFFFF,&H00101828,&H80101828,-1,0,1,3,1,5,100,100,100,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+"""
+    lines = [header]
+    for start, end, text in events:
+        lines.append(f"Dialogue: 0,{ass_time(start)},{ass_time(end)},Karaoke,,0,0,0,,{{\\an5\\pos(960,480)}}{text}\n")
+    path.write_text("".join(lines), encoding="utf-8-sig")
+    return bool(events)
 
 def main():
     ap=argparse.ArgumentParser(description="Crear vídeo de una lección")
@@ -95,12 +161,17 @@ def main():
     for i,sc in enumerate(scenes,1):
         scene_text=" ".join(str(sc.get("voz",sc.get("texto",""))).split())
         (texts/f"{i:02d}.txt").write_text(scene_text+"\n",encoding="utf-8")
-        sp=slides/f"{i:02d}.png"; render_slide(sc,title,sp)
+        sp=slides/f"{i:02d}.png"; render_slide(sc,title,sp,hide_blocks=True)
+        ass_path=tmp/f"karaoke_{i:02d}.ass"
+        has_karaoke=karaoke_ass(sc,dur,ass_path)
+        if not has_karaoke:
+            render_slide(sc,title,sp)
         if sc.get("practica"): render_slide(sc,title,slides/f"{i:02d}-practica.png",True)
         seg=tmp/f"{i:02d}.mp4"; dur=durations[i-1]
+        filters = f"ass={ass_path.relative_to(ROOT).as_posix()},format=yuv420p" if has_karaoke else "format=yuv420p"
         run(["ffmpeg","-y","-loop","1","-framerate","25","-i",str(sp),
              "-f","lavfi","-i","anullsrc=r=44100:cl=stereo","-t",f"{dur:.3f}",
-             "-vf","format=yuv420p","-c:v","libx264","-preset","veryfast","-pix_fmt","yuv420p",
+             "-vf",filters,"-c:v","libx264","-preset","veryfast","-pix_fmt","yuv420p",
              "-c:a","aac","-b:a","128k","-shortest",str(seg)])
         segments.append(seg)
         print(f"Escena {i}/{len(scenes)} lista ({dur:.0f} s)")
