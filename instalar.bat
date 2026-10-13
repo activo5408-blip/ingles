@@ -13,8 +13,6 @@ if errorlevel 1 (
   exit /b 1
 )
 echo [1/3] Instalando dependencias de Python...
-python -m pip install --upgrade pip
-if errorlevel 1 goto error
 python -m pip install -r requirements.txt
 if errorlevel 1 goto error
 echo.
@@ -23,33 +21,41 @@ where ffmpeg >nul 2>nul
 if not errorlevel 1 goto ffmpeg_ok
 where winget >nul 2>nul
 if errorlevel 1 goto ffmpeg_manual
-echo FFmpeg no esta disponible. Intentando instalarlo con winget...
-winget install --id Gyan.FFmpeg.Shared --exact --accept-package-agreements --accept-source-agreements
-if errorlevel 1 goto ffmpeg_manual
+echo FFmpeg no esta disponible. Intentando instalar la version Essentials...
+winget install -e --id Gyan.FFmpeg --silent --accept-package-agreements --accept-source-agreements
 echo.
-echo Se solicito la instalacion de FFmpeg.
-echo Cierra esta ventana y vuelve a abrirla para actualizar PATH.
-echo Luego ejecuta: ffmpeg -version
+where ffmpeg >nul 2>nul
+if not errorlevel 1 goto ffmpeg_ok
+echo No aparece en PATH todavia. Comprobando paquete Shared como alternativa...
+winget install -e --id Gyan.FFmpeg.Shared --silent --accept-package-agreements --accept-source-agreements
+echo.
+where ffmpeg >nul 2>nul
+if not errorlevel 1 goto ffmpeg_ok
+echo.
+echo WinGet no pudo dejar FFmpeg disponible en esta ventana.
+echo Cierra esta ventana, abre una nueva y ejecuta: ffmpeg -version
+echo Si sigue sin reconocerse, ejecuta este comando y copia aqui el resultado:
+echo   winget install -e --id Gyan.FFmpeg
 goto done
 :ffmpeg_ok
-echo FFmpeg esta disponible:
+echo [3/3] FFmpeg esta disponible:
 ffmpeg -version
 echo.
 where ffprobe >nul 2>nul
 if errorlevel 1 (
-  echo AVISO: no se encuentra ffprobe. Debe estar en la misma carpeta bin de FFmpeg.
-  goto ffmpeg_manual
+  echo AVISO: no se encuentra ffprobe en PATH.
+  echo Comprueba que ffprobe.exe este en la carpeta bin de FFmpeg.
+  goto done
 )
-echo [3/3] Instalacion completada. Ya puedes ejecutar crear_leccion.bat.
+echo Instalacion completada. Ya puedes ejecutar crear_leccion.bat.
 goto done
 :ffmpeg_manual
 echo.
-echo No se pudo instalar o detectar FFmpeg automaticamente.
-echo Instala FFmpeg para Windows y agrega su carpeta bin al PATH.
-echo Despues abre una ventana CMD nueva y comprueba:
-echo   ffmpeg -version
-echo   ffprobe -version
-echo Descarga del proyecto: https://github.com/activo5408-blip/ingles
+echo WinGet no esta instalado o no esta en PATH.
+echo Puedes descargar FFmpeg desde:
+echo https://www.gyan.dev/ffmpeg/builds/
+echo Elige "ffmpeg-release-essentials.zip", extraelo y localiza la carpeta bin.
+echo Agrega esa carpeta bin al PATH de Windows.
 goto done
 :error
 echo.
