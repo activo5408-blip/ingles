@@ -104,7 +104,7 @@ def karaoke_ass(scene, seconds, path):
         tags = []
         for j, (word, weight) in enumerate(zip(words, weights)):
             word_dur = max(0.08, (end-start) * weight/total)
-            tags.append(r"{\k%d}%s" % (max(1, int(round(word_dur*100))), word))
+            tags.append(r"{\kf%d}%s" % (max(1, int(round(word_dur*100))), word))
             if j < len(words)-1: tags.append(" ")
         events.append((start, end, "".join(tags)))
     header = """[Script Info]
