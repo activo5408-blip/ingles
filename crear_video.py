@@ -59,7 +59,18 @@ def main():
     ap=argparse.ArgumentParser(description="Crear vídeo de una lección")
     ap.add_argument("leccion", help="Ruta del JSON de la lección")
     args=ap.parse_args()
+    # Detectar FFmpeg antes de crear escenas y mostrar un mensaje claro en Windows.
+    import shutil
+    missing = [tool for tool in ("ffmpeg", "ffprobe") if shutil.which(tool) is None]
+    if missing:
+        names = " y ".join(missing)
+        raise RuntimeError(
+            f"No se encuentra {names}. Instala FFmpeg y agrega su carpeta bin al PATH de Windows. "
+            "Luego cierra y vuelve a abrir la consola o el programa. Para comprobarlo, ejecuta: ffmpeg -version"
+        )
     lp=Path(args.leccion).resolve()
+    if not lp.is_file():
+        raise FileNotFoundError(f"No se encuentra el JSON de la lección: {lp}")
     lesson=json.loads(lp.read_text(encoding="utf-8-sig"))
     scenes=lesson.get("escenas",[])
     if not scenes: raise ValueError("El JSON no contiene escenas.")
