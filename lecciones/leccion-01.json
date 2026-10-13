@@ -1,0 +1,98 @@
+{
+  "titulo": "Inglés práctico: preséntate",
+  "objetivo_minutos": 8,
+  "miniatura": {
+    "grande": "INTRODUCE YOURSELF",
+    "chico": "PRESÉNTATE EN INGLÉS"
+  },
+  "escenas": [
+    {
+      "capitulo": "Saludo",
+      "kicker": "EMPEZAMOS",
+      "bloques": [
+        {
+          "texto": "Hello!",
+          "estilo": "principal"
+        },
+        {
+          "texto": "¡Hola!",
+          "estilo": "secundario"
+        }
+      ],
+      "texto": "Hello. Hoy vamos a aprender a presentarnos en inglés.",
+      "pausa": 2
+    },
+    {
+      "capitulo": "Decir tu nombre",
+      "kicker": "FRASE 1",
+      "bloques": [
+        {
+          "texto": "Hi, I'm Ana.",
+          "estilo": "principal"
+        },
+        {
+          "texto": "Hola, soy Ana.",
+          "estilo": "secundario"
+        }
+      ],
+      "texto": "Hi, I'm Ana. Ahora repite la frase usando tu propio nombre.",
+      "pausa": 5,
+      "practica": true
+    },
+    {
+      "capitulo": "Mucho gusto",
+      "kicker": "FRASE 2",
+      "bloques": [
+        {
+          "texto": "Nice to meet you.",
+          "estilo": "principal"
+        },
+        {
+          "texto": "Mucho gusto.",
+          "estilo": "secundario"
+        }
+      ],
+      "texto": "Nice to meet you. Significa mucho gusto. Repítelo en voz alta.",
+      "pausa": 5,
+      "practica": true
+    },
+    {
+      "capitulo": "De dónde eres",
+      "kicker": "FRASE 3",
+      "bloques": [
+        {
+          "texto": "I'm from Puerto Rico.",
+          "estilo": "principal"
+        },
+        {
+          "texto": "Soy de Puerto Rico.",
+          "estilo": "secundario"
+        }
+      ],
+      "texto": "I'm from Puerto Rico. Cambia Puerto Rico por tu país y repite.",
+      "pausa": 5,
+      "practica": true
+    },
+    {
+      "capitulo": "Tu turno",
+      "kicker": "PRACTICA",
+      "bloques": [
+        {
+          "texto": "Hi, I'm ...",
+          "estilo": "principal"
+        },
+        {
+          "texto": "I'm from ...",
+          "estilo": "principal"
+        },
+        {
+          "texto": "Nice to meet you.",
+          "estilo": "nota"
+        }
+      ],
+      "texto": "Ahora preséntate completo. Di tu nombre, de dónde eres y termina diciendo Nice to meet you.",
+      "pausa": 8,
+      "practica": true
+    }
+  ]
+}
