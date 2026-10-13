@@ -2,64 +2,49 @@
 setlocal
 cd /d "%~dp0"
 echo ========================================
-echo   Instalador - Canal de ingles Windows
+echo   Canal de Ingles - Instalador Windows
 echo ========================================
 echo.
 where python >nul 2>nul
 if errorlevel 1 (
   echo ERROR: Python no esta en PATH.
-  echo Instala Python y marca "Add Python to PATH".
+  echo Instala Python 3.10 o posterior y marca "Add Python to PATH".
   pause
   exit /b 1
 )
 echo [1/3] Instalando dependencias de Python...
+python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 if errorlevel 1 goto error
 echo.
-echo [2/3] Comprobando FFmpeg...
+echo [2/3] Buscando FFmpeg...
+set "FFBIN=G:\INSTALL\!!!Proyectos Yeinier\ffmpeg\bin"
+if exist "%FFBIN%\ffmpeg.exe" if exist "%FFBIN%\ffprobe.exe" goto ffmpeg_ok
 where ffmpeg >nul 2>nul
-if not errorlevel 1 goto ffmpeg_ok
-where winget >nul 2>nul
 if errorlevel 1 goto ffmpeg_manual
-echo FFmpeg no esta disponible. Intentando instalar la version Essentials...
-winget install -e --id Gyan.FFmpeg --silent --accept-package-agreements --accept-source-agreements
-echo.
-where ffmpeg >nul 2>nul
-if not errorlevel 1 goto ffmpeg_ok
-echo No aparece en PATH todavia. Comprobando paquete Shared como alternativa...
-winget install -e --id Gyan.FFmpeg.Shared --silent --accept-package-agreements --accept-source-agreements
-echo.
-where ffmpeg >nul 2>nul
-if not errorlevel 1 goto ffmpeg_ok
-echo.
-echo WinGet no pudo dejar FFmpeg disponible en esta ventana.
-echo Cierra esta ventana, abre una nueva y ejecuta: ffmpeg -version
-echo Si sigue sin reconocerse, ejecuta este comando y copia aqui el resultado:
-echo   winget install -e --id Gyan.FFmpeg
-goto done
+for %%I in (ffmpeg.exe) do set "FFEXE=%%~$PATH:I"
+for %%I in (ffprobe.exe) do set "FPROBE=%%~$PATH:I"
+if not defined FFEXE goto ffmpeg_manual
+if not defined FPROBE goto ffmpeg_manual
+for %%I in ("%FFEXE%") do set "FFBIN=%%~dpI"
 :ffmpeg_ok
-echo [3/3] FFmpeg esta disponible:
-ffmpeg -version
+set "PATH=%FFBIN%;%PATH%"
+echo FFmpeg: "%FFBIN%ffmpeg.exe"
+echo FFprobe: "%FFBIN%ffprobe.exe"
+"%FFBIN%ffmpeg.exe" -version
 echo.
-where ffprobe >nul 2>nul
-if errorlevel 1 (
-  echo AVISO: no se encuentra ffprobe en PATH.
-  echo Comprueba que ffprobe.exe este en la carpeta bin de FFmpeg.
-  goto done
-)
-echo Instalacion completada. Ya puedes ejecutar crear_leccion.bat.
-goto done
-:ffmpeg_manual
-echo.
-echo WinGet no esta instalado o no esta en PATH.
-echo Puedes descargar FFmpeg desde:
-echo https://www.gyan.dev/ffmpeg/builds/
-echo Elige "ffmpeg-release-essentials.zip", extraelo y localiza la carpeta bin.
-echo Agrega esa carpeta bin al PATH de Windows.
-goto done
-:error
-echo.
-echo ERROR instalando las dependencias de Python.
-:done
-echo.
+echo [3/3] Instalacion terminada.
+echo Ejecuta ABRIR_CANAL_INGLES.bat para abrir el programa.
 pause
+exit /b 0
+:ffmpeg_manual
+echo No se encontro FFmpeg.
+echo Coloca ffmpeg.exe y ffprobe.exe en:
+echo G:\INSTALL\!!!Proyectos Yeinier\ffmpeg\bin
+echo o agrega la carpeta bin de FFmpeg al PATH.
+pause
+exit /b 1
+:error
+echo ERROR instalando las dependencias Python.
+pause
+exit /b 1
