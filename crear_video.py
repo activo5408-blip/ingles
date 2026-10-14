@@ -26,31 +26,130 @@ def wrap(draw, text, fnt, max_w):
     return lines
 
 def render_slide(scene, title, path, practice=False, hide_blocks=False):
-    im = Image.new("RGB", (W, H), BG); d = ImageDraw.Draw(im)
-    if scene.get("kicker"): d.text((120, 80), scene["kicker"], font=font(38), fill=ACCENT)
-    blocks = [] if hide_blocks else scene.get("bloques", [{"texto": scene.get("texto", ""), "estilo": "principal"}])
-    colors = {"principal": FG, "secundario": MUTED, "nota": ACCENT, "bueno": "#4ade80", "malo": "#f87171", "dialogo": FG}
-    sizes = {"principal": 88, "secundario": 52, "nota": 44, "bueno": 78, "malo": 78, "dialogo": 48}
-    rows, total = [], 0
-    for b in blocks:
-        size = sizes.get(b.get("estilo", "principal"), 72); f = font(size)
-        lines = wrap(d, b.get("texto", ""), f, W-280)
-        while len(lines) > 3 and size > 36:
-            size -= 4; f = font(size); lines = wrap(d, b.get("texto", ""), f, W-280)
-        rows.append((b, lines, f, size, colors.get(b.get("estilo", "principal"), FG)))
-        total += len(lines) * int(size*1.3) + (42 if b.get("etiqueta") else 0) + 28
-    y = max(170, (H - total) // 2)
-    for b, lines, f, size, color in rows:
-        if b.get("etiqueta"):
-            ef=font(30); label=b["etiqueta"]; d.text(((W-d.textlength(label,font=ef))/2,y),label,font=ef,fill=color); y+=42
-        for line in lines:
-            x=120 if scene.get("alineacion")=="izquierda" else (W-d.textlength(line,font=f))/2
-            d.text((x,y),line,font=f,fill=color); y+=int(size*1.3)
-        y+=28
+    """Diseño editorial moderno para clases: fondos, tarjetas y recursos visuales según el tipo de actividad."""
+    im = Image.new("RGB", (W, H))
+    px = im.load()
+    # Fondo degradado azul noche con un brillo lateral suave.
+    top = (10, 17, 35); bottom = (18, 32, 58)
+    for y in range(H):
+        t = y / max(1, H-1)
+        base = tuple(int(top[i]*(1-t) + bottom[i]*t) for i in range(3))
+        for x in range(W):
+            glow = max(0, 1 - (((x-1570)/760)**2 + ((y-220)/650)**2)**0.5) * 10
+            px[x,y] = tuple(min(255, int(c+glow*(1 if i==2 else 0.65))) for i,c in enumerate(base))
+    d = ImageDraw.Draw(im)
+    accent = "#f6c453"; white = "#f7f9ff"; muted = "#a8b6cc"
+    panel = "#172640"; panel2 = "#1d3150"; green = "#6ee7b7"; blue = "#78b7ff"
+    kicker = str(scene.get("kicker", "INGLÉS PRÁCTICO")).upper()
+    chapter = str(scene.get("capitulo", title))
+    blocks = scene.get("bloques", [{"texto": scene.get("texto", ""), "estilo": "principal"}])
+    chapter_l = (chapter + " " + kicker).lower()
+    if any(k in chapter_l for k in ("convers", "dialog", "escucha")):
+        mode = "dialogo"
+    elif any(k in chapter_l for k in ("práctica", "practica", "repaso", "ahora te", "cierre")):
+        mode = "practica"
+    elif any(k in chapter_l for k in ("bienvenida", "objetivo", "introduc", "presenta")):
+        mode = "inicio"
+    elif any(k in chapter_l for k in ("vocab", "palabra", "saludar", "desped", "nombre", "preguntar", "país", "pais")):
+        mode = "vocabulario"
+    else:
+        mode = "explicacion"
+
+    # Marca de capítulo y cabecera de estilo editorial.
+    d.rounded_rectangle((80, 64, 92, 126), radius=6, fill=accent)
+    d.text((122, 72), kicker, font=font(30), fill=accent)
+    d.text((122, 116), chapter, font=font(26), fill=muted)
+    d.line((80, 166, 1840, 166), fill="#30415d", width=2)
+
+    # Marco visual cambia con la dinámica didáctica de cada escena.
+    if mode == "inicio":
+        d.rounded_rectangle((120, 245, 1800, 815), radius=42, fill=panel, outline="#314969", width=2)
+        d.ellipse((1450, 315, 1690, 555), fill=panel2, outline=accent, width=5)
+        d.ellipse((1510, 375, 1630, 495), outline=blue, width=7)
+        d.line((1530, 435, 1560, 465, 1615, 400), fill=green, width=12)
+        d.rounded_rectangle((220, 675, 690, 735), radius=25, fill="#263d5d")
+        d.text((255, 691), "ESCUCHA  ·  COMPRENDE  ·  HABLA", font=font(23), fill=white)
+    elif mode == "dialogo":
+        d.rounded_rectangle((110, 260, 900, 790), radius=36, fill=panel, outline="#304969", width=2)
+        d.rounded_rectangle((1020, 260, 1810, 790), radius=36, fill=panel2, outline="#304969", width=2)
+        d.ellipse((170, 315, 250, 395), fill=accent)
+        d.ellipse((1080, 315, 1160, 395), fill=blue)
+        d.text((190, 330), "A", font=font(38), fill="#101a2c")
+        d.text((1100, 330), "B", font=font(38), fill="#101a2c")
+        d.rounded_rectangle((220, 690, 790, 742), radius=22, fill="#263d5d")
+        d.rounded_rectangle((1120, 690, 1690, 742), radius=22, fill="#263d5d")
+        d.text((350, 704), "ESCUCHA A", font=font(22), fill=white)
+        d.text((1250, 704), "RESPONDE B", font=font(22), fill=white)
+        d.line((940, 400, 980, 400), fill=accent, width=8)
+        d.polygon([(980,400),(960,384),(960,416)], fill=accent)
+    elif mode == "practica":
+        d.rounded_rectangle((120, 245, 1800, 815), radius=42, fill=panel, outline="#314969", width=2)
+        for i, (label, color) in enumerate((("1", accent), ("2", blue), ("3", green))):
+            cx = 420 + i*540
+            d.ellipse((cx-58, 330, cx+58, 446), fill=color)
+            ff = font(54); tw = d.textlength(label, font=ff)
+            d.text((cx-tw/2, 350), label, font=ff, fill="#101a2c")
+            if i < 2:
+                d.line((cx+90, 388, cx+360, 388), fill="#3c506d", width=5)
+        for x, label in ((300, "ESCUCHA"), (840, "REPITE"), (1380, "PRACTICA")):
+            ff=font(28); tw=d.textlength(label,font=ff)
+            d.text((x-tw/2, 490), label, font=ff, fill=muted)
+        d.rounded_rectangle((460, 590, 1460, 655), radius=28, fill="#263d5d")
+        d.text((570, 608), "TU TURNO · HABLA EN VOZ ALTA", font=font(26), fill=green)
+    elif mode == "vocabulario":
+        d.rounded_rectangle((120, 245, 1800, 815), radius=42, fill=panel, outline="#314969", width=2)
+        # Tarjetas de aprendizaje para inglés, traducción y pronunciación.
+        cards = [(190, 570, 650, 730, accent), (730, 570, 1190, 730, blue), (1270, 570, 1730, 730, green)]
+        labels = ["ENGLISH", "ESPAÑOL", "PRONUNCIACIÓN"]
+        for (x1,y1,x2,y2,c), label in zip(cards,labels):
+            d.rounded_rectangle((x1,y1,x2,y2), radius=24, fill=panel2, outline=c, width=3)
+            ff=font(22); d.text((x1+28,y1+22), label, font=ff, fill=c)
+        d.ellipse((820, 320, 1100, 500), outline=accent, width=8)
+        d.arc((870, 355, 1050, 465), 15, 165, fill=blue, width=7)
+        d.line((920, 420, 950, 450, 1010, 380), fill=green, width=9)
+    else:
+        d.rounded_rectangle((120, 245, 1800, 815), radius=42, fill=panel, outline="#314969", width=2)
+        d.rounded_rectangle((150, 285, 1768, 335), radius=18, fill="#223958")
+        d.ellipse((1680, 275, 1728, 323), fill=accent)
+        d.ellipse((1692, 287, 1716, 311), fill=panel)
+        # Puntos de avance y líneas de apoyo visual.
+        for i in range(5):
+            x = 260 + i*330
+            d.ellipse((x-8, 700, x+8, 716), fill=accent if i == 0 else "#50627d")
+        d.line((280, 745, 1640, 745), fill="#30415d", width=3)
+
+    # En modo de karaoke, el texto lo aporta el subtítulo sincronizado; el diseño queda despejado.
+    if not hide_blocks:
+        colors = {"principal": white, "secundario": muted, "nota": accent, "bueno": green, "malo": "#fca5a5", "dialogo": white}
+        sizes = {"principal": 76, "secundario": 48, "nota": 40, "bueno": 68, "malo": 68, "dialogo": 46}
+        rows, total = [], 0
+        for b in blocks:
+            size = sizes.get(b.get("estilo", "principal"), 58); f = font(size)
+            lines = wrap(d, b.get("texto", ""), f, W-320)
+            while len(lines) > 2 and size > 34:
+                size -= 3; f = font(size); lines = wrap(d, b.get("texto", ""), f, W-320)
+            rows.append((b, lines, f, size, colors.get(b.get("estilo", "principal"), white)))
+            total += len(lines) * int(size*1.22) + (34 if b.get("etiqueta") else 0) + 16
+        y = max(340, min(560, 535-total//2))
+        for b, lines, f, size, color in rows:
+            if b.get("etiqueta"):
+                ef=font(26); label=b["etiqueta"]; d.text(((W-d.textlength(label,font=ef))/2,y),label,font=ef,fill=color); y+=36
+            for line in lines:
+                x=(W-d.textlength(line,font=f))/2
+                d.text((x+2,y+3),line,font=f,fill="#08111f",stroke_width=1)
+                d.text((x,y),line,font=f,fill=color)
+                y+=int(size*1.22)
+            y+=16
+
+    # Pie con marca, número de capítulo y barra de progreso.
+    d.line((80, 930, 1840, 930), fill="#30415d", width=2)
+    d.text((82, 958), "CANAL DE INGLÉS", font=font(22), fill=muted)
+    d.text((1500, 958), "APRENDE · PRACTICA · AVANZA", font=font(20), fill=muted)
+    d.rounded_rectangle((80, 1020, 1840, 1030), radius=5, fill="#263750")
+    d.rounded_rectangle((80, 1020, 520 if mode=="inicio" else 920 if mode=="vocabulario" else 1320 if mode=="dialogo" else 1640, 1030), radius=5, fill=accent)
     if practice:
-        label="AHORA TÚ · REPITE EN VOZ ALTA"; f=font(42); x=(W-d.textlength(label,font=f))/2
-        d.rounded_rectangle([350,H-190,1570,H-90],radius=24,fill=ACCENT); d.text((x,H-170),label,font=f,fill="#1a1204")
-    d.text((120,H-70),title,font=font(28),fill=MUTED)
+        label="AHORA TÚ · REPITE EN VOZ ALTA"; f=font(34); x=(W-d.textlength(label,font=f))/2
+        d.rounded_rectangle([350,H-190,1570,H-90],radius=24,fill=accent); d.text((x,H-170),label,font=f,fill="#1a1204")
     im.save(path)
 
 def run(cmd):
