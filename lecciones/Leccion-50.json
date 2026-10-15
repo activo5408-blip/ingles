@@ -2,10 +2,16 @@
   "numero": 50,
   "canal": "INGLÉS CON SARA",
   "titulo": "Repaso final",
+  "minimo_minutos": 8,
+  "maximo_minutos": 9,
+  "ritmo_voz": 2.6,
+  "miniatura": {
+    "grande": "Repaso final",
+    "chico": "PRACTICA INGLÉS"
+  },
+  "descripcion": "Aprende inglés: repasar el curso.\n\nINGLÉS CON SARA · Curso de inglés práctico para hispanohablantes. Lección 50 de 50.",
+  "hashtags": "#inglés #aprenderinglés #inglesconsara #inglésparahispanohablantes #cursodeinglés",
   "objetivo": "repasar el curso",
-  "minutos_objetivo": "8–9",
-  "duracion_objetivo_segundos": 510,
-  "tipo": "leccion_practica",
   "vocabulario": [
     "greetings",
     "questions",
@@ -18,77 +24,265 @@
   },
   "escenas": [
     {
-      "nombre": "Introducción",
-      "guion": [
-        "¡Hola! Soy Sara y esto es Inglés con Sara. Hoy vamos a repasar el curso. No necesitas hablar perfecto para empezar. Escucha, repite y practica conmigo.",
-        "Prepara tu voz. Cuando escuches una frase, repítela en voz alta. Si necesitas más tiempo, pausa el vídeo. Equivocarse es parte natural de aprender.",
-        "Al final podrás usar expresiones útiles en una situación cotidiana. Aprenderemos palabras, construiremos frases y practicaremos una conversación."
+      "capitulo": "Introducción",
+      "kicker": "INTRODUCCIÓN",
+      "tablero": [
+        {
+          "t": "LECCIÓN 50",
+          "e": "nota"
+        },
+        {
+          "t": "Introducción",
+          "e": "grande"
+        },
+        {
+          "t": "Repaso final",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "¡Hola! Soy Sara y esto es Inglés con Sara. Hoy vamos a repasar el curso. No necesitas hablar perfecto para empezar. Escucha, repite y practica conmigo."
+        },
+        {
+          "d": "Prepara tu voz. Cuando escuches una frase, repítela en voz alta. Si necesitas más tiempo, pausa el vídeo. Equivocarse es parte natural de aprender."
+        },
+        {
+          "d": "Al final podrás usar expresiones útiles en una situación cotidiana. Aprenderemos palabras, construiremos frases y practicaremos una conversación."
+        }
       ]
     },
     {
-      "nombre": "Vocabulario",
-      "guion": [
-        "Escucha y repite estas expresiones: greetings, questions, daily life, confidence. Di cada una dos veces. Ahora intenta recordarlas sin mirar.",
-        "Segunda vuelta: repite la lista otra vez. Si una expresión no sale, escucha la respuesta y vuelve a intentarlo.",
-        "Piensa cuál de estas palabras usarías primero en una situación real. Crea una frase sencilla en inglés."
+      "capitulo": "Vocabulario",
+      "kicker": "VOCABULARIO",
+      "tablero": [
+        {
+          "t": "LECCIÓN 50",
+          "e": "nota"
+        },
+        {
+          "t": "Vocabulario",
+          "e": "grande"
+        },
+        {
+          "t": "Repaso final",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Escucha y repite estas expresiones: greetings, questions, daily life, confidence. Di cada una dos veces. Ahora intenta recordarlas sin mirar."
+        },
+        {
+          "d": "Segunda vuelta: repite la lista otra vez. Si una expresión no sale, escucha la respuesta y vuelve a intentarlo."
+        },
+        {
+          "d": "Piensa cuál de estas palabras usarías primero en una situación real. Crea una frase sencilla en inglés."
+        }
       ]
     },
     {
-      "nombre": "Frase principal",
-      "guion": [
-        "La frase principal de hoy es: I can speak a little English, and I'm improving every day.. Significa: Puedo hablar un poco de inglés..",
-        "Primera repetición: I can speak a little English, and I'm improving every day.. Segunda repetición: I can speak a little English, and I'm improving every day.. Tercera repetición: I can speak a little English, and I'm improving every day..",
-        "Escucha el ritmo de la frase. Primero repite despacio, luego a velocidad natural. Intenta unir las palabras.",
-        "Ahora intenta decirla de memoria. Piensa en una situación real en la que podrías usarla."
+      "capitulo": "Frase principal",
+      "kicker": "FRASE PRINCIPAL",
+      "tablero": [
+        {
+          "t": "LECCIÓN 50",
+          "e": "nota"
+        },
+        {
+          "t": "Frase principal",
+          "e": "grande"
+        },
+        {
+          "t": "Repaso final",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "La frase principal de hoy es: I can speak a little English, and I'm improving every day.. Significa: Puedo hablar un poco de inglés.."
+        },
+        {
+          "d": "Primera repetición: I can speak a little English, and I'm improving every day.. Segunda repetición: I can speak a little English, and I'm improving every day.. Tercera repetición: I can speak a little English, and I'm improving every day.."
+        },
+        {
+          "d": "Escucha el ritmo de la frase. Primero repite despacio, luego a velocidad natural. Intenta unir las palabras."
+        },
+        {
+          "d": "Ahora intenta decirla de memoria. Piensa en una situación real en la que podrías usarla."
+        }
       ]
     },
     {
-      "nombre": "Construimos frases",
-      "guion": [
-        "Aprender una estructura te permite crear más de una frase. Escucha el modelo y repítelo.",
-        "Modelo uno: I can speak a little English, and I'm improving every day.. Repite dos veces.",
-        "Modelo dos: Could you help me, please? Significa «¿Podrías ayudarme, por favor?». Repítelo dos veces.",
-        "Modelo tres: Could you say that again, please? Significa «¿Podrías repetirlo, por favor?». Repítelo dos veces.",
-        "Modelo cuatro: Thank you. Have a nice day! Repítelo con voz clara.",
-        "Ronda adicional: elige tu frase favorita y repítela tres veces. Después cambia un detalle para crear una frase propia."
+      "capitulo": "Construimos frases",
+      "kicker": "CONSTRUIMOS FRASES",
+      "tablero": [
+        {
+          "t": "LECCIÓN 50",
+          "e": "nota"
+        },
+        {
+          "t": "Construimos frases",
+          "e": "grande"
+        },
+        {
+          "t": "Repaso final",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Aprender una estructura te permite crear más de una frase. Escucha el modelo y repítelo."
+        },
+        {
+          "d": "Modelo uno: I can speak a little English, and I'm improving every day.. Repite dos veces."
+        },
+        {
+          "d": "Modelo dos: Could you help me, please? Significa «¿Podrías ayudarme, por favor?». Repítelo dos veces."
+        },
+        {
+          "d": "Modelo tres: Could you say that again, please? Significa «¿Podrías repetirlo, por favor?». Repítelo dos veces."
+        },
+        {
+          "d": "Modelo cuatro: Thank you. Have a nice day! Repítelo con voz clara."
+        },
+        {
+          "d": "Ronda adicional: elige tu frase favorita y repítela tres veces. Después cambia un detalle para crear una frase propia."
+        }
       ]
     },
     {
-      "nombre": "Diálogo",
-      "guion": [
-        "Imagina una situación relacionada con repaso final. Escucha la conversación completa e intenta entender la idea general.",
-        "A: Hello! How can I help you? B: Hi. I can speak a little English, and I'm improving every day. A: Of course. B: Thank you. A: You're welcome. Is there anything else? B: No, that's all. Thanks for your help. A: Have a nice day! B: You too. Goodbye!",
-        "Interpreta la parte A en voz alta y deja una pausa para contestar como B. Luego cambia los papeles.",
-        "Repite el diálogo una segunda vez. Intenta mirar menos el texto y recordar las respuestas."
+      "capitulo": "Diálogo",
+      "kicker": "DIÁLOGO",
+      "tablero": [
+        {
+          "t": "LECCIÓN 50",
+          "e": "nota"
+        },
+        {
+          "t": "Diálogo",
+          "e": "grande"
+        },
+        {
+          "t": "Repaso final",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Imagina una situación relacionada con repaso final. Escucha la conversación completa e intenta entender la idea general."
+        },
+        {
+          "d": "A: Hello! How can I help you? B: Hi. I can speak a little English, and I'm improving every day. A: Of course. B: Thank you. A: You're welcome. Is there anything else? B: No, that's all. Thanks for your help. A: Have a nice day! B: You too. Goodbye!"
+        },
+        {
+          "d": "Interpreta la parte A en voz alta y deja una pausa para contestar como B. Luego cambia los papeles."
+        },
+        {
+          "d": "Repite el diálogo una segunda vez. Intenta mirar menos el texto y recordar las respuestas."
+        }
       ]
     },
     {
-      "nombre": "Reto",
-      "guion": [
-        "Responde en voz alta y haz una pausa antes de mirar la respuesta.",
-        "Pregunta: ¿Cuál es la frase principal de hoy? Respuesta: I can speak a little English, and I'm improving every day..",
-        "Pregunta: ¿Cómo pedirías ayuda? Respuesta: Could you help me, please?",
-        "Pregunta: ¿Cómo pedirías que repitan algo? Respuesta: Could you say that again, please?",
-        "Si te equivocaste, escucha la respuesta, repítela y vuelve a intentarlo."
+      "capitulo": "Reto",
+      "kicker": "RETO",
+      "tablero": [
+        {
+          "t": "LECCIÓN 50",
+          "e": "nota"
+        },
+        {
+          "t": "Reto",
+          "e": "grande"
+        },
+        {
+          "t": "Repaso final",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Responde en voz alta y haz una pausa antes de mirar la respuesta."
+        },
+        {
+          "d": "Pregunta: ¿Cuál es la frase principal de hoy? Respuesta: I can speak a little English, and I'm improving every day.."
+        },
+        {
+          "d": "Pregunta: ¿Cómo pedirías ayuda? Respuesta: Could you help me, please?"
+        },
+        {
+          "d": "Pregunta: ¿Cómo pedirías que repitan algo? Respuesta: Could you say that again, please?"
+        },
+        {
+          "d": "Si te equivocaste, escucha la respuesta, repítela y vuelve a intentarlo."
+        }
       ]
     },
     {
-      "nombre": "Práctica guiada",
-      "guion": [
-        "Haremos tres rondas. En la primera, repite después de Sara. En la segunda, espera tres segundos e intenta recordar. En la tercera, imagina que tienes delante a una persona real.",
-        "Ronda uno: I can speak a little English, and I'm improving every day.. Repite. I can speak a little English, and I'm improving every day.. Una vez más.",
-        "Ronda dos: recuerda «Puedo hablar un poco de inglés.» y dilo en inglés antes de leer la respuesta. Respuesta: I can speak a little English, and I'm improving every day..",
-        "Ronda tres: di la frase principal con naturalidad. Crea otra frase usando estas expresiones: greetings, questions, daily life.",
-        "Haz una pausa de diez segundos. Piensa en la frase que más necesitas en tu vida diaria y dilo en inglés sin ayuda."
+      "capitulo": "Práctica guiada",
+      "kicker": "PRÁCTICA GUIADA",
+      "tablero": [
+        {
+          "t": "LECCIÓN 50",
+          "e": "nota"
+        },
+        {
+          "t": "Práctica guiada",
+          "e": "grande"
+        },
+        {
+          "t": "Repaso final",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Haremos tres rondas. En la primera, repite después de Sara. En la segunda, espera tres segundos e intenta recordar. En la tercera, imagina que tienes delante a una persona real."
+        },
+        {
+          "d": "Ronda uno: I can speak a little English, and I'm improving every day.. Repite. I can speak a little English, and I'm improving every day.. Una vez más."
+        },
+        {
+          "d": "Ronda dos: recuerda «Puedo hablar un poco de inglés.» y dilo en inglés antes de leer la respuesta. Respuesta: I can speak a little English, and I'm improving every day.."
+        },
+        {
+          "d": "Ronda tres: di la frase principal con naturalidad. Crea otra frase usando estas expresiones: greetings, questions, daily life."
+        },
+        {
+          "d": "Haz una pausa de diez segundos. Piensa en la frase que más necesitas en tu vida diaria y dilo en inglés sin ayuda."
+        }
       ]
     },
     {
-      "nombre": "Resumen",
-      "guion": [
-        "Hoy practicaste cómo repasar el curso. Las expresiones clave fueron: greetings, questions, daily life, confidence. La frase principal es: I can speak a little English, and I'm improving every day., que significa «Puedo hablar un poco de inglés.».",
-        "Para recordar mejor, practica tres veces: una ahora, otra más tarde y otra mañana. Si puedes, escribe la frase y crea un ejemplo personal.",
-        "No necesitas hacerlo perfecto; necesitas volver a practicar. Cada frase que logras decir sin ayuda es un avance.",
-        "Soy Sara y esto fue Inglés con Sara, lección 50 de 50. Gracias por practicar conmigo. ¡Nos vemos en la próxima lección!"
+      "capitulo": "Resumen",
+      "kicker": "RESUMEN",
+      "tablero": [
+        {
+          "t": "LECCIÓN 50",
+          "e": "nota"
+        },
+        {
+          "t": "Resumen",
+          "e": "grande"
+        },
+        {
+          "t": "Repaso final",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Hoy practicaste cómo repasar el curso. Las expresiones clave fueron: greetings, questions, daily life, confidence. La frase principal es: I can speak a little English, and I'm improving every day., que significa «Puedo hablar un poco de inglés.»."
+        },
+        {
+          "d": "Para recordar mejor, practica tres veces: una ahora, otra más tarde y otra mañana. Si puedes, escribe la frase y crea un ejemplo personal."
+        },
+        {
+          "d": "No necesitas hacerlo perfecto; necesitas volver a practicar. Cada frase que logras decir sin ayuda es un avance."
+        },
+        {
+          "d": "Soy Sara y esto fue Inglés con Sara, lección 50 de 50. Gracias por practicar conmigo. ¡Nos vemos en la próxima lección!"
+        }
       ]
     }
   ],
