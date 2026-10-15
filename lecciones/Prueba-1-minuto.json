@@ -2,6 +2,7 @@
   "numero": 0,
   "canal": "INGLÉS CON SARA",
   "titulo": "Prueba de un minuto: saludos en inglés",
+  "objetivo_minutos": 1,
   "minimo_minutos": 1,
   "maximo_minutos": 1,
   "ritmo_voz": 2.6,
@@ -9,57 +10,42 @@
     "grande": "SALUDOS EN INGLÉS",
     "chico": "PRUEBA DE 1 MINUTO"
   },
-  "descripcion": "Prueba corta del formato de Inglés con Sara: frase en inglés, traducción, pronunciación guiada y práctica.",
+  "descripcion": "Prueba corta del formato de Inglés con Sara: inglés, traducción, pronunciación y práctica.",
   "hashtags": "#ingles #aprenderingles #inglesconsara",
   "objetivo": "saludar y presentarse con frases sencillas",
-  "vocabulario": [
-    "Hello",
-    "How are you?",
-    "I'm fine, thank you.",
-    "Nice to meet you."
-  ],
+  "vocabulario": ["Hello", "How are you?", "I'm fine, thank you.", "Nice to meet you."],
   "frase_principal": {
     "ingles": "Hello! I'm Ana. Nice to meet you.",
     "espanol": "¡Hola! Soy Ana. Encantada de conocerte."
   },
   "escenas": [
     {
-      "capitulo": "Bienvenida",
+      "capitulo": "Saludos básicos",
       "kicker": "INGLÉS FÁCIL",
       "tablero": [
-        { "t": "PRUEBA DE 1 MINUTO", "e": "nota" },
-        { "t": "Saludos en inglés", "e": "grande" },
-        { "t": "Escucha · comprende · repite", "e": "medio" }
+        {"t": "PRUEBA DE 1 MINUTO", "e": "nota"},
+        {"t": "Saludos en inglés", "e": "grande"},
+        {"t": "Escucha · comprende · repite", "e": "medio"}
       ],
       "pasos": [
-        { "d": "¡Hola! Soy Sara. En un minuto vas a practicar cuatro frases útiles. Escucha el inglés, lee su significado y repite en voz alta." },
-        { "texto": "PRIMERA FRASE" },
-        { "en": "Hello!", "es": "¡Hola!", "pron": "Jelóu", "quien": "Sara" },
-        { "pausa": 2, "texto": "Ahora repite tú." },
-        { "en": "How are you?", "es": "¿Cómo estás?", "pron": "Jau ar iu?", "quien": "Sara" },
-        { "pausa": 2, "texto": "Repite: How are you?" },
-        { "en": "I'm fine, thank you.", "es": "Estoy bien, gracias.", "pron": "Aim fain, zank iu", "quien": "Sara" },
-        { "pausa": 2, "texto": "Una vez más, con calma." },
-        { "en": "Nice to meet you.", "es": "Encantada de conocerte.", "pron": "Nais tu mit iu", "quien": "Sara" }
-      ]
-    },
-    {
-      "capitulo": "Mini diálogo",
-      "kicker": "ESCUCHA LA CONVERSACIÓN",
-      "tablero": [
-        { "t": "EN UNA PRESENTACIÓN", "e": "nota" },
-        { "t": "Nice to meet you", "e": "grande" },
-        { "t": "Conoce a Ana y Ben", "e": "medio" }
-      ],
-      "pasos": [
-        { "en": "Hello! I'm Ana.", "es": "¡Hola! Soy Ana.", "pron": "Jelóu! Aim Ana.", "quien": "Ana" },
-        { "en": "Hi, Ana. I'm Ben.", "es": "Hola, Ana. Soy Ben.", "pron": "Jai, Ana. Aim Ben.", "quien": "Ben" },
-        { "en": "Nice to meet you.", "es": "Encantada de conocerte.", "pron": "Nais tu mit iu.", "quien": "Ana" },
-        { "en": "Nice to meet you, too.", "es": "Encantado de conocerte también.", "pron": "Nais tu mit iu, tu.", "quien": "Ben" },
-        { "texto": "AHORA TÚ · Repite: Hello! I'm Ana.", "pausa": 3 },
-        { "d": "¡Muy bien! Practica estas frases una vez más para recordarlas. Soy Sara y esto fue Inglés con Sara." }
+        {"d": "¡Hola! Soy Sara. En esta prueba vas a practicar saludos sencillos. Escucha, mira la traducción y repite en voz alta."},
+        {"en": "Hello!", "es": "¡Hola!", "pron": "Jelóu", "quien": "Sara"},
+        {"pausa": 2},
+        {"en": "How are you?", "es": "¿Cómo estás?", "pron": "Jau ar iu?", "quien": "Sara"},
+        {"pausa": 2},
+        {"en": "I'm fine, thank you.", "es": "Estoy bien, gracias.", "pron": "Aim fain, zank iu.", "quien": "Sara"},
+        {"pausa": 2},
+        {"en": "Nice to meet you.", "es": "Encantada de conocerte.", "pron": "Nais tu mit iu.", "quien": "Sara"},
+        {"d": "Ahora escucha una conversación breve entre Ana y Ben."},
+        {"en": "Hello! I'm Ana.", "es": "¡Hola! Soy Ana.", "pron": "Jelóu, aim Ana.", "quien": "Ana"},
+        {"en": "Hi, Ana. I'm Ben.", "es": "Hola, Ana. Soy Ben.", "pron": "Jai, Ana. Aim Ben.", "quien": "Ben"},
+        {"en": "Nice to meet you.", "es": "Encantada de conocerte.", "pron": "Nais tu mit iu.", "quien": "Ana"},
+        {"en": "Nice to meet you, too.", "es": "Encantado de conocerte también.", "pron": "Nais tu mit iu, tu.", "quien": "Ben"},
+        {"d": "Tu turno. Repite en voz alta: Hello! I'm Ana."},
+        {"pausa": 3},
+        {"d": "¡Muy bien! Practica estas frases otra vez para recordarlas. Soy Sara y esto fue Inglés con Sara."}
       ]
     }
   ],
-  "nota_produccion": "Muestra breve para comprobar el diseño, los subtítulos y el comportamiento del motor de voz. La duración real depende de las voces y las pausas configuradas."
+  "nota_produccion": "Prueba breve para comprobar el formato y el motor de voz. Duración objetivo: un minuto."
 }
