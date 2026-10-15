@@ -1,0 +1,290 @@
+{
+  "numero": 34,
+  "canal": "INGLÉS CON SARA",
+  "titulo": "Invitaciones y disculpas",
+  "minimo_minutos": 8,
+  "maximo_minutos": 9,
+  "ritmo_voz": 2.6,
+  "miniatura": {
+    "grande": "Invitaciones y disculpas",
+    "chico": "PRACTICA INGLÉS"
+  },
+  "descripcion": "Aprende inglés: invitar y disculparte.\n\nINGLÉS CON SARA · Curso de inglés práctico para hispanohablantes. Lección 34 de 50.",
+  "hashtags": "#inglés #aprenderinglés #inglesconsara #inglésparahispanohablantes #cursodeinglés",
+  "objetivo": "invitar y disculparte",
+  "vocabulario": [
+    "would you like",
+    "I'm sorry",
+    "no worries",
+    "maybe next time"
+  ],
+  "frase_principal": {
+    "ingles": "Would you like to join us?",
+    "espanol": "¿Te gustaría acompañarnos?"
+  },
+  "escenas": [
+    {
+      "capitulo": "Introducción",
+      "kicker": "INTRODUCCIÓN",
+      "tablero": [
+        {
+          "t": "LECCIÓN 34",
+          "e": "nota"
+        },
+        {
+          "t": "Introducción",
+          "e": "grande"
+        },
+        {
+          "t": "Invitaciones y disculpas",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "¡Hola! Soy Sara y esto es Inglés con Sara. Hoy vamos a invitar y disculparte. No necesitas hablar perfecto para empezar. Escucha, repite y practica conmigo."
+        },
+        {
+          "d": "Prepara tu voz. Cuando escuches una frase, repítela en voz alta. Si necesitas más tiempo, pausa el vídeo. Equivocarse es parte natural de aprender."
+        },
+        {
+          "d": "Al final podrás usar expresiones útiles en una situación cotidiana. Aprenderemos palabras, construiremos frases y practicaremos una conversación."
+        }
+      ]
+    },
+    {
+      "capitulo": "Vocabulario",
+      "kicker": "VOCABULARIO",
+      "tablero": [
+        {
+          "t": "LECCIÓN 34",
+          "e": "nota"
+        },
+        {
+          "t": "Vocabulario",
+          "e": "grande"
+        },
+        {
+          "t": "Invitaciones y disculpas",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Escucha y repite estas expresiones: would you like, I'm sorry, no worries, maybe next time. Di cada una dos veces. Ahora intenta recordarlas sin mirar."
+        },
+        {
+          "d": "Segunda vuelta: repite la lista otra vez. Si una expresión no sale, escucha la respuesta y vuelve a intentarlo."
+        },
+        {
+          "d": "Piensa cuál de estas palabras usarías primero en una situación real. Crea una frase sencilla en inglés."
+        }
+      ]
+    },
+    {
+      "capitulo": "Frase principal",
+      "kicker": "FRASE PRINCIPAL",
+      "tablero": [
+        {
+          "t": "LECCIÓN 34",
+          "e": "nota"
+        },
+        {
+          "t": "Frase principal",
+          "e": "grande"
+        },
+        {
+          "t": "Invitaciones y disculpas",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "La frase principal de hoy es: Would you like to join us?. Significa: ¿Te gustaría acompañarnos?."
+        },
+        {
+          "d": "Primera repetición: Would you like to join us?. Segunda repetición: Would you like to join us?. Tercera repetición: Would you like to join us?."
+        },
+        {
+          "d": "Escucha el ritmo de la frase. Primero repite despacio, luego a velocidad natural. Intenta unir las palabras."
+        },
+        {
+          "d": "Ahora intenta decirla de memoria. Piensa en una situación real en la que podrías usarla."
+        }
+      ]
+    },
+    {
+      "capitulo": "Construimos frases",
+      "kicker": "CONSTRUIMOS FRASES",
+      "tablero": [
+        {
+          "t": "LECCIÓN 34",
+          "e": "nota"
+        },
+        {
+          "t": "Construimos frases",
+          "e": "grande"
+        },
+        {
+          "t": "Invitaciones y disculpas",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Aprender una estructura te permite crear más de una frase. Escucha el modelo y repítelo."
+        },
+        {
+          "d": "Modelo uno: Would you like to join us?. Repite dos veces."
+        },
+        {
+          "d": "Modelo dos: Could you help me, please? Significa «¿Podrías ayudarme, por favor?». Repítelo dos veces."
+        },
+        {
+          "d": "Modelo tres: Could you say that again, please? Significa «¿Podrías repetirlo, por favor?». Repítelo dos veces."
+        },
+        {
+          "d": "Modelo cuatro: Thank you. Have a nice day! Repítelo con voz clara."
+        },
+        {
+          "d": "Ronda adicional: elige tu frase favorita y repítela tres veces. Después cambia un detalle para crear una frase propia."
+        }
+      ]
+    },
+    {
+      "capitulo": "Diálogo",
+      "kicker": "DIÁLOGO",
+      "tablero": [
+        {
+          "t": "LECCIÓN 34",
+          "e": "nota"
+        },
+        {
+          "t": "Diálogo",
+          "e": "grande"
+        },
+        {
+          "t": "Invitaciones y disculpas",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Imagina una situación relacionada con invitaciones y disculpas. Escucha la conversación completa e intenta entender la idea general."
+        },
+        {
+          "d": "A: Hello! How can I help you? B: Hi. Would you like to join us? A: Of course. B: Thank you. A: You're welcome. Is there anything else? B: No, that's all. Thanks for your help. A: Have a nice day! B: You too. Goodbye!"
+        },
+        {
+          "d": "Interpreta la parte A en voz alta y deja una pausa para contestar como B. Luego cambia los papeles."
+        },
+        {
+          "d": "Repite el diálogo una segunda vez. Intenta mirar menos el texto y recordar las respuestas."
+        }
+      ]
+    },
+    {
+      "capitulo": "Reto",
+      "kicker": "RETO",
+      "tablero": [
+        {
+          "t": "LECCIÓN 34",
+          "e": "nota"
+        },
+        {
+          "t": "Reto",
+          "e": "grande"
+        },
+        {
+          "t": "Invitaciones y disculpas",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Responde en voz alta y haz una pausa antes de mirar la respuesta."
+        },
+        {
+          "d": "Pregunta: ¿Cuál es la frase principal de hoy? Respuesta: Would you like to join us?."
+        },
+        {
+          "d": "Pregunta: ¿Cómo pedirías ayuda? Respuesta: Could you help me, please?"
+        },
+        {
+          "d": "Pregunta: ¿Cómo pedirías que repitan algo? Respuesta: Could you say that again, please?"
+        },
+        {
+          "d": "Si te equivocaste, escucha la respuesta, repítela y vuelve a intentarlo."
+        }
+      ]
+    },
+    {
+      "capitulo": "Práctica guiada",
+      "kicker": "PRÁCTICA GUIADA",
+      "tablero": [
+        {
+          "t": "LECCIÓN 34",
+          "e": "nota"
+        },
+        {
+          "t": "Práctica guiada",
+          "e": "grande"
+        },
+        {
+          "t": "Invitaciones y disculpas",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Haremos tres rondas. En la primera, repite después de Sara. En la segunda, espera tres segundos e intenta recordar. En la tercera, imagina que tienes delante a una persona real."
+        },
+        {
+          "d": "Ronda uno: Would you like to join us?. Repite. Would you like to join us?. Una vez más."
+        },
+        {
+          "d": "Ronda dos: recuerda «¿Te gustaría acompañarnos?» y dilo en inglés antes de leer la respuesta. Respuesta: Would you like to join us?."
+        },
+        {
+          "d": "Ronda tres: di la frase principal con naturalidad. Crea otra frase usando estas expresiones: would you like, I'm sorry, no worries."
+        },
+        {
+          "d": "Haz una pausa de diez segundos. Piensa en la frase que más necesitas en tu vida diaria y dilo en inglés sin ayuda."
+        }
+      ]
+    },
+    {
+      "capitulo": "Resumen",
+      "kicker": "RESUMEN",
+      "tablero": [
+        {
+          "t": "LECCIÓN 34",
+          "e": "nota"
+        },
+        {
+          "t": "Resumen",
+          "e": "grande"
+        },
+        {
+          "t": "Invitaciones y disculpas",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Hoy practicaste cómo invitar y disculparte. Las expresiones clave fueron: would you like, I'm sorry, no worries, maybe next time. La frase principal es: Would you like to join us?, que significa «¿Te gustaría acompañarnos?»."
+        },
+        {
+          "d": "Para recordar mejor, practica tres veces: una ahora, otra más tarde y otra mañana. Si puedes, escribe la frase y crea un ejemplo personal."
+        },
+        {
+          "d": "No necesitas hacerlo perfecto; necesitas volver a practicar. Cada frase que logras decir sin ayuda es un avance."
+        },
+        {
+          "d": "Soy Sara y esto fue Inglés con Sara, lección 34 de 50. Gracias por practicar conmigo. ¡Nos vemos en la próxima lección!"
+        }
+      ]
+    }
+  ],
+  "nota_produccion": "Duración objetivo 8–9 minutos. La duración real depende del motor de voz, las pausas y las repeticiones; medirla tras generar el audio."
+}
