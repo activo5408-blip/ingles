@@ -1,0 +1,97 @@
+{
+  "numero": 21,
+  "canal": "INGLÉS CON SARA",
+  "titulo": "En el hotel",
+  "objetivo": "registrarte en un hotel",
+  "minutos_objetivo": "8–9",
+  "duracion_objetivo_segundos": 510,
+  "tipo": "leccion_practica",
+  "vocabulario": [
+    "reservation",
+    "room",
+    "key",
+    "check-in",
+    "checkout"
+  ],
+  "frase_principal": {
+    "ingles": "I have a reservation under Smith.",
+    "espanol": "Tengo una reserva."
+  },
+  "escenas": [
+    {
+      "nombre": "Introducción",
+      "guion": [
+        "¡Hola! Soy Sara y esto es Inglés con Sara. Hoy vamos a registrarte en un hotel. No necesitas hablar perfecto para empezar. Escucha, repite y practica conmigo.",
+        "Prepara tu voz. Cuando escuches una frase, repítela en voz alta. Si necesitas más tiempo, pausa el vídeo. Equivocarse es parte natural de aprender.",
+        "Al final podrás usar expresiones útiles en una situación cotidiana. Aprenderemos palabras, construiremos frases y practicaremos una conversación."
+      ]
+    },
+    {
+      "nombre": "Vocabulario",
+      "guion": [
+        "Escucha y repite estas expresiones: reservation, room, key, check-in, checkout. Di cada una dos veces. Ahora intenta recordarlas sin mirar.",
+        "Segunda vuelta: repite la lista otra vez. Si una expresión no sale, escucha la respuesta y vuelve a intentarlo.",
+        "Piensa cuál de estas palabras usarías primero en una situación real. Crea una frase sencilla en inglés."
+      ]
+    },
+    {
+      "nombre": "Frase principal",
+      "guion": [
+        "La frase principal de hoy es: I have a reservation under Smith.. Significa: Tengo una reserva..",
+        "Primera repetición: I have a reservation under Smith.. Segunda repetición: I have a reservation under Smith.. Tercera repetición: I have a reservation under Smith..",
+        "Escucha el ritmo de la frase. Primero repite despacio, luego a velocidad natural. Intenta unir las palabras.",
+        "Ahora intenta decirla de memoria. Piensa en una situación real en la que podrías usarla."
+      ]
+    },
+    {
+      "nombre": "Construimos frases",
+      "guion": [
+        "Aprender una estructura te permite crear más de una frase. Escucha el modelo y repítelo.",
+        "Modelo uno: I have a reservation under Smith.. Repite dos veces.",
+        "Modelo dos: Could you help me, please? Significa «¿Podrías ayudarme, por favor?». Repítelo dos veces.",
+        "Modelo tres: Could you say that again, please? Significa «¿Podrías repetirlo, por favor?». Repítelo dos veces.",
+        "Modelo cuatro: Thank you. Have a nice day! Repítelo con voz clara.",
+        "Ronda adicional: elige tu frase favorita y repítela tres veces. Después cambia un detalle para crear una frase propia."
+      ]
+    },
+    {
+      "nombre": "Diálogo",
+      "guion": [
+        "Imagina una situación relacionada con en el hotel. Escucha la conversación completa e intenta entender la idea general.",
+        "A: Hello! How can I help you? B: Hi. I have a reservation under Smith. A: Of course. B: Thank you. A: You're welcome. Is there anything else? B: No, that's all. Thanks for your help. A: Have a nice day! B: You too. Goodbye!",
+        "Interpreta la parte A en voz alta y deja una pausa para contestar como B. Luego cambia los papeles.",
+        "Repite el diálogo una segunda vez. Intenta mirar menos el texto y recordar las respuestas."
+      ]
+    },
+    {
+      "nombre": "Reto",
+      "guion": [
+        "Responde en voz alta y haz una pausa antes de mirar la respuesta.",
+        "Pregunta: ¿Cuál es la frase principal de hoy? Respuesta: I have a reservation under Smith..",
+        "Pregunta: ¿Cómo pedirías ayuda? Respuesta: Could you help me, please?",
+        "Pregunta: ¿Cómo pedirías que repitan algo? Respuesta: Could you say that again, please?",
+        "Si te equivocaste, escucha la respuesta, repítela y vuelve a intentarlo."
+      ]
+    },
+    {
+      "nombre": "Práctica guiada",
+      "guion": [
+        "Haremos tres rondas. En la primera, repite después de Sara. En la segunda, espera tres segundos e intenta recordar. En la tercera, imagina que tienes delante a una persona real.",
+        "Ronda uno: I have a reservation under Smith.. Repite. I have a reservation under Smith.. Una vez más.",
+        "Ronda dos: recuerda «Tengo una reserva.» y dilo en inglés antes de leer la respuesta. Respuesta: I have a reservation under Smith..",
+        "Ronda tres: di la frase principal con naturalidad. Crea otra frase usando estas expresiones: reservation, room, key.",
+        "Haz una pausa de diez segundos. Piensa en la frase que más necesitas en tu vida diaria y dilo en inglés sin ayuda."
+      ]
+    },
+    {
+      "nombre": "Resumen",
+      "guion": [
+        "Hoy practicaste cómo registrarte en un hotel. Las expresiones clave fueron: reservation, room, key, check-in, checkout. La frase principal es: I have a reservation under Smith., que significa «Tengo una reserva.».",
+        "Para recordar mejor, practica tres veces: una ahora, otra más tarde y otra mañana. Si puedes, escribe la frase y crea un ejemplo personal.",
+        "No necesitas hacerlo perfecto; necesitas volver a practicar. Cada frase que logras decir sin ayuda es un avance.",
+        "Soy Sara y esto fue Inglés con Sara, lección 21 de 50. Gracias por practicar conmigo. ¡Nos vemos en la próxima lección!"
+      ]
+    }
+  ],
+  "nota_produccion": "Duración objetivo 8–9 minutos. La duración real depende del motor de voz, las pausas y las repeticiones; medirla tras generar el audio."
+}
