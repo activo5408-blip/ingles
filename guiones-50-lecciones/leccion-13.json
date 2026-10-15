@@ -1,0 +1,321 @@
+{
+  "numero": 13,
+  "canal": "INGLÉS CON SARA",
+  "titulo": "Transporte: moverte en autobús, tren y taxi",
+  "minimo_minutos": 8,
+  "maximo_minutos": 9,
+  "duracion_objetivo_segundos": 510,
+  "tipo": "leccion_practica",
+  "descripcion": "Lección 13 de 50. Aprende a moverte en autobús, tren y taxi con vocabulario, ejemplos, diálogo y práctica en voz alta.",
+  "vocabulario": [
+    "bus stop",
+    "ticket",
+    "station",
+    "get off",
+    "fare"
+  ],
+  "frase_principal": {
+    "ingles": "Does this bus go downtown?",
+    "espanol": "¿Este autobús va al centro?"
+  },
+  "escenas": [
+    {
+      "capitulo": "Empezamos",
+      "kicker": "LECCIÓN 13 · INGLÉS CON SARA",
+      "tablero": [
+        {
+          "t": "LECCIÓN 13",
+          "e": "grande"
+        },
+        {
+          "t": "Transporte",
+          "e": "nota"
+        },
+        {
+          "t": "moverte en autobús, tren y taxi",
+          "e": "nota"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "¡Hola! Soy Sara y esto es Inglés con Sara. Hoy vamos a aprender a moverte en autobús, tren y taxi. No necesitas hablar perfecto para empezar: escucha, repite y practica conmigo."
+        },
+        {
+          "d": "Prepara tu voz. Cuando escuches una frase, repítela en voz alta. Si necesitas más tiempo, pausa el vídeo. Equivocarse es parte natural de aprender un idioma."
+        },
+        {
+          "d": "Al final podrás usar expresiones útiles en una situación cotidiana. Primero aprenderemos palabras, luego construiremos frases y terminaremos con un diálogo y un reto de memoria."
+        }
+      ]
+    },
+    {
+      "capitulo": "Vocabulario clave",
+      "kicker": "ESCUCHA Y REPITE",
+      "tablero": [
+        {
+          "t": "Palabras clave",
+          "e": "grande"
+        },
+        {
+          "t": "Transporte",
+          "e": "nota"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Escucha cada palabra y piensa en su significado. Después repítela dos veces. No intentes memorizarlo todo de golpe; concéntrate en reconocer las expresiones cuando vuelvas a escucharlas."
+        },
+        {
+          "reto": {
+            "p": "¿Cómo se dice «bus stop»?",
+            "r": "bus stop",
+            "es": "Expresión útil para moverte en autobús, tren y taxi.",
+            "pron": "bus stop",
+            "seg": 5
+          }
+        },
+        {
+          "reto": {
+            "p": "¿Cómo se dice «ticket»?",
+            "r": "ticket",
+            "es": "Expresión útil para moverte en autobús, tren y taxi.",
+            "pron": "ticket",
+            "seg": 5
+          }
+        },
+        {
+          "reto": {
+            "p": "¿Cómo se dice «station»?",
+            "r": "station",
+            "es": "Expresión útil para moverte en autobús, tren y taxi.",
+            "pron": "station",
+            "seg": 5
+          }
+        },
+        {
+          "reto": {
+            "p": "¿Cómo se dice «get off»?",
+            "r": "get off",
+            "es": "Expresión útil para moverte en autobús, tren y taxi.",
+            "pron": "get off",
+            "seg": 5
+          }
+        },
+        {
+          "reto": {
+            "p": "¿Cómo se dice «fare»?",
+            "r": "fare",
+            "es": "Expresión útil para moverte en autobús, tren y taxi.",
+            "pron": "fare",
+            "seg": 5
+          }
+        },
+        {
+          "d": "Segunda vuelta: vuelve a decir cada expresión sin mirar la lista. Si alguna no sale, escucha la respuesta y repítela otra vez."
+        }
+      ]
+    },
+    {
+      "capitulo": "La frase principal",
+      "kicker": "UNA FRASE PARA LA VIDA REAL",
+      "tablero": [
+        {
+          "t": "Does this bus go downtown?",
+          "e": "grande"
+        },
+        {
+          "t": "¿Este autobús va al centro?",
+          "e": "nota"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "La frase principal de hoy es: Does this bus go downtown? Significa: ¿Este autobús va al centro?"
+        },
+        {
+          "d": "Escucha el ritmo de la frase. Primero repite despacio, luego a velocidad natural. Intenta unir las palabras sin hacer una pausa después de cada una."
+        },
+        {
+          "d": "Primera repetición: Does this bus go downtown? Segunda repetición: Does this bus go downtown? Tercera repetición: Does this bus go downtown?"
+        },
+        {
+          "d": "Ahora mira hacia otro lado e intenta decirla de memoria. Piensa en una situación real en la que podrías usarla."
+        }
+      ]
+    },
+    {
+      "capitulo": "Construimos frases",
+      "kicker": "CAMBIA Y PRACTICA",
+      "tablero": [
+        {
+          "t": "Construye frases",
+          "e": "grande"
+        },
+        {
+          "t": "Un patrón puede servir para muchas situaciones",
+          "e": "nota"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Aprender una estructura te permite crear más de una frase. Escucha el modelo y repítelo. Después cambia una palabra para adaptarlo a tu vida."
+        },
+        {
+          "d": "Modelo 1: Does this bus go downtown? Pausa un momento y repítelo dos veces."
+        },
+        {
+          "d": "Modelo 2: Could you help me, please? Pausa un momento y repítelo dos veces."
+        },
+        {
+          "d": "Modelo 3: Could you say that again, please? Pausa un momento y repítelo dos veces."
+        },
+        {
+          "d": "Modelo 4: Thank you. Have a nice day! Pausa un momento y repítelo dos veces."
+        },
+        {
+          "d": "Modelo 5: I would like to practice English. Pausa un momento y repítelo dos veces."
+        },
+        {
+          "d": "Ronda adicional: di cada modelo con voz clara. Ahora elige el que te resulte más útil y repítelo tres veces."
+        }
+      ]
+    },
+    {
+      "capitulo": "Diálogo",
+      "kicker": "ESCUCHA LA CONVERSACIÓN",
+      "tablero": [
+        {
+          "t": "Situación real",
+          "e": "grande"
+        },
+        {
+          "t": "Primero escucha; después toma tu turno",
+          "e": "nota"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Imagina que estás en una situación relacionada con transporte. Escucha la conversación completa e intenta entender la idea general."
+        },
+        {
+          "d": "A: Hello! How can I help you? B: Hi. Does this bus go downtown? A: Of course. B: Thank you. A: You're welcome. Is there anything else? B: No, that's all. Thanks for your help. A: Have a nice day! B: You too. Goodbye!"
+        },
+        {
+          "d": "Ahora interpreta la parte A en voz alta y deja una pausa para contestar como B. Luego cambia los papeles. Presta atención a las expresiones de cortesía: hacen que una conversación suene natural."
+        },
+        {
+          "d": "Repite el diálogo una segunda vez. Intenta mirar menos el texto y recordar las respuestas. No te preocupes por el acento: prioriza que las palabras se entiendan."
+        }
+      ]
+    },
+    {
+      "capitulo": "Reto de escucha",
+      "kicker": "PIENSA ANTES DE RESPONDER",
+      "tablero": [
+        {
+          "t": "Tu turno",
+          "e": "grande"
+        },
+        {
+          "t": "Responde en voz alta",
+          "e": "nota"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Voy a hacerte unas preguntas. Deténte un momento antes de mirar la respuesta. Lo importante es recuperar el inglés de la memoria."
+        },
+        {
+          "reto": {
+            "p": "¿Cuál es la frase principal de hoy?",
+            "r": "Does this bus go downtown?",
+            "es": "¿Este autobús va al centro?",
+            "pron": "Does this bus go downtown?",
+            "seg": 7
+          }
+        },
+        {
+          "reto": {
+            "p": "¿Cómo pedirías ayuda de forma educada?",
+            "r": "Could you help me, please?",
+            "es": "¿Podrías ayudarme, por favor?",
+            "pron": "Could you help me, please",
+            "seg": 7
+          }
+        },
+        {
+          "reto": {
+            "p": "¿Cómo pedirías que repitan algo?",
+            "r": "Could you say that again, please?",
+            "es": "¿Podrías repetirlo, por favor?",
+            "pron": "Could you say that again, please",
+            "seg": 7
+          }
+        },
+        {
+          "d": "Si te equivocaste, escucha la respuesta, repítela y vuelve a intentarlo. Cada intento entrena tu memoria."
+        }
+      ]
+    },
+    {
+      "capitulo": "Práctica guiada",
+      "kicker": "AHORA HABLAS TÚ",
+      "tablero": [
+        {
+          "t": "Práctica guiada",
+          "e": "grande"
+        },
+        {
+          "t": "Repetición con pausas",
+          "e": "nota"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Haremos tres rondas. En la primera, repite justo después de leer. En la segunda, espera tres segundos e intenta recordar. En la tercera, imagina que tienes delante a una persona real."
+        },
+        {
+          "d": "Ronda uno: Does this bus go downtown? Repite. Does this bus go downtown? Una vez más."
+        },
+        {
+          "d": "Ronda dos: recuerda «¿Este autobús va al centro?» y dilo en inglés antes de leer la respuesta. Respuesta: Does this bus go downtown?"
+        },
+        {
+          "d": "Ronda tres: di la frase principal con naturalidad. Después crea una frase propia usando una de estas expresiones: bus stop, ticket, station."
+        },
+        {
+          "d": "Haz una pausa de diez segundos. Durante la pausa, piensa en la frase que más necesitas en tu vida diaria. Cuando vuelvas, dilo en inglés sin ayuda."
+        }
+      ]
+    },
+    {
+      "capitulo": "Resumen",
+      "kicker": "REPASO Y DESPEDIDA",
+      "tablero": [
+        {
+          "t": "Lo que aprendiste",
+          "e": "grande"
+        },
+        {
+          "t": "moverte en autobús, tren y taxi",
+          "e": "nota"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Hoy practicaste cómo moverte en autobús, tren y taxi. Las expresiones clave fueron: bus stop, ticket, station, get off, fare. La frase principal es: Does this bus go downtown?, que significa «¿Este autobús va al centro?»."
+        },
+        {
+          "d": "Para recordar mejor, practica tres veces: una ahora, otra más tarde y otra mañana. Si puedes, escribe la frase y crea un ejemplo personal."
+        },
+        {
+          "d": "Recuerda que aprender un idioma es un proceso. No necesitas hacerlo perfecto; necesitas volver a practicar. Cada frase que logras decir sin ayuda es un avance."
+        },
+        {
+          "d": "Soy Sara y esto fue Inglés con Sara, lección 13 de 50. Gracias por practicar conmigo. ¡Nos vemos en la próxima lección!"
+        }
+      ]
+    }
+  ],
+  "nota_produccion": "Duración objetivo 8–9 minutos. Confirmar la duración real con el motor de voz. Mantener las pausas de respuesta y repetir las frases señaladas; no acelerar para acortar el vídeo."
+}
