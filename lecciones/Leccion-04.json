@@ -2,10 +2,16 @@
   "numero": 4,
   "canal": "INGLÉS CON SARA",
   "titulo": "Oraciones fáciles 1",
+  "minimo_minutos": 8,
+  "maximo_minutos": 9,
+  "ritmo_voz": 2.6,
+  "miniatura": {
+    "grande": "Oraciones fáciles 1",
+    "chico": "PRACTICA INGLÉS"
+  },
+  "descripcion": "Aprende inglés: practicar frases fáciles.\n\nINGLÉS CON SARA · Curso de inglés práctico para hispanohablantes. Lección 4 de 50.",
+  "hashtags": "#inglés #aprenderinglés #inglesconsara #inglésparahispanohablantes #cursodeinglés",
   "objetivo": "practicar frases fáciles",
-  "minutos_objetivo": "8–9",
-  "duracion_objetivo_segundos": 510,
-  "tipo": "oraciones_faciles",
   "vocabulario": [
     "I am ready",
     "I need help",
@@ -18,80 +24,274 @@
   },
   "escenas": [
     {
-      "nombre": "Introducción",
-      "guion": [
-        "¡Hola! Soy Sara y esto es Inglés con Sara. Hoy vamos a practicar frases fáciles. No necesitas hablar perfecto para empezar. Escucha, repite y practica conmigo.",
-        "Prepara tu voz. Cuando escuches una frase, repítela en voz alta. Si necesitas más tiempo, pausa el vídeo. Equivocarse es parte natural de aprender.",
-        "Al final podrás usar expresiones útiles en una situación cotidiana. Aprenderemos palabras, construiremos frases y practicaremos una conversación."
+      "capitulo": "Introducción",
+      "kicker": "INTRODUCCIÓN",
+      "tablero": [
+        {
+          "t": "LECCIÓN 04",
+          "e": "nota"
+        },
+        {
+          "t": "Introducción",
+          "e": "grande"
+        },
+        {
+          "t": "Oraciones fáciles 1",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "¡Hola! Soy Sara y esto es Inglés con Sara. Hoy vamos a practicar frases fáciles. No necesitas hablar perfecto para empezar. Escucha, repite y practica conmigo."
+        },
+        {
+          "d": "Prepara tu voz. Cuando escuches una frase, repítela en voz alta. Si necesitas más tiempo, pausa el vídeo. Equivocarse es parte natural de aprender."
+        },
+        {
+          "d": "Al final podrás usar expresiones útiles en una situación cotidiana. Aprenderemos palabras, construiremos frases y practicaremos una conversación."
+        }
       ]
     },
     {
-      "nombre": "Vocabulario",
-      "guion": [
-        "Escucha y repite estas expresiones: I am ready, I need help, I like it, come here. Di cada una dos veces. Ahora intenta recordarlas sin mirar.",
-        "Segunda vuelta: repite la lista otra vez. Si una expresión no sale, escucha la respuesta y vuelve a intentarlo.",
-        "Piensa cuál de estas palabras usarías primero en una situación real. Crea una frase sencilla en inglés."
+      "capitulo": "Vocabulario",
+      "kicker": "VOCABULARIO",
+      "tablero": [
+        {
+          "t": "LECCIÓN 04",
+          "e": "nota"
+        },
+        {
+          "t": "Vocabulario",
+          "e": "grande"
+        },
+        {
+          "t": "Oraciones fáciles 1",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Escucha y repite estas expresiones: I am ready, I need help, I like it, come here. Di cada una dos veces. Ahora intenta recordarlas sin mirar."
+        },
+        {
+          "d": "Segunda vuelta: repite la lista otra vez. Si una expresión no sale, escucha la respuesta y vuelve a intentarlo."
+        },
+        {
+          "d": "Piensa cuál de estas palabras usarías primero en una situación real. Crea una frase sencilla en inglés."
+        }
       ]
     },
     {
-      "nombre": "Frase principal",
-      "guion": [
-        "La frase principal de hoy es: I am ready.. Significa: Estoy listo o lista..",
-        "Primera repetición: I am ready.. Segunda repetición: I am ready.. Tercera repetición: I am ready..",
-        "Escucha el ritmo de la frase. Primero repite despacio, luego a velocidad natural. Intenta unir las palabras.",
-        "Ahora intenta decirla de memoria. Piensa en una situación real en la que podrías usarla."
+      "capitulo": "Frase principal",
+      "kicker": "FRASE PRINCIPAL",
+      "tablero": [
+        {
+          "t": "LECCIÓN 04",
+          "e": "nota"
+        },
+        {
+          "t": "Frase principal",
+          "e": "grande"
+        },
+        {
+          "t": "Oraciones fáciles 1",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "La frase principal de hoy es: I am ready.. Significa: Estoy listo o lista.."
+        },
+        {
+          "d": "Primera repetición: I am ready.. Segunda repetición: I am ready.. Tercera repetición: I am ready.."
+        },
+        {
+          "d": "Escucha el ritmo de la frase. Primero repite despacio, luego a velocidad natural. Intenta unir las palabras."
+        },
+        {
+          "d": "Ahora intenta decirla de memoria. Piensa en una situación real en la que podrías usarla."
+        }
       ]
     },
     {
-      "nombre": "Construimos frases",
-      "guion": [
-        "Aprender una estructura te permite crear más de una frase. Escucha el modelo y repítelo.",
-        "Modelo uno: I am ready.. Repite dos veces.",
-        "Modelo dos: Could you help me, please? Significa «¿Podrías ayudarme, por favor?». Repítelo dos veces.",
-        "Modelo tres: Could you say that again, please? Significa «¿Podrías repetirlo, por favor?». Repítelo dos veces.",
-        "Modelo cuatro: Thank you. Have a nice day! Repítelo con voz clara.",
-        "Oración fácil: I am ready. Estoy listo o lista. Repite dos veces.",
-        "Oración fácil: I need help. Necesito ayuda. Repite dos veces.",
-        "Oración fácil: Wait a minute. Espera un minuto. Repite dos veces.",
-        "Oración fácil: That's fine. Está bien. Repite dos veces."
+      "capitulo": "Construimos frases",
+      "kicker": "CONSTRUIMOS FRASES",
+      "tablero": [
+        {
+          "t": "LECCIÓN 04",
+          "e": "nota"
+        },
+        {
+          "t": "Construimos frases",
+          "e": "grande"
+        },
+        {
+          "t": "Oraciones fáciles 1",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Aprender una estructura te permite crear más de una frase. Escucha el modelo y repítelo."
+        },
+        {
+          "d": "Modelo uno: I am ready.. Repite dos veces."
+        },
+        {
+          "d": "Modelo dos: Could you help me, please? Significa «¿Podrías ayudarme, por favor?». Repítelo dos veces."
+        },
+        {
+          "d": "Modelo tres: Could you say that again, please? Significa «¿Podrías repetirlo, por favor?». Repítelo dos veces."
+        },
+        {
+          "d": "Modelo cuatro: Thank you. Have a nice day! Repítelo con voz clara."
+        },
+        {
+          "d": "Oración fácil: I am ready. Estoy listo o lista. Repite dos veces."
+        },
+        {
+          "d": "Oración fácil: I need help. Necesito ayuda. Repite dos veces."
+        },
+        {
+          "d": "Oración fácil: Wait a minute. Espera un minuto. Repite dos veces."
+        },
+        {
+          "d": "Oración fácil: That's fine. Está bien. Repite dos veces."
+        }
       ]
     },
     {
-      "nombre": "Diálogo",
-      "guion": [
-        "Imagina una situación relacionada con oraciones fáciles 1. Escucha la conversación completa e intenta entender la idea general.",
-        "A: Hello! How can I help you? B: Hi. I am ready. A: Of course. B: Thank you. A: You're welcome. Is there anything else? B: No, that's all. Thanks for your help. A: Have a nice day! B: You too. Goodbye!",
-        "Interpreta la parte A en voz alta y deja una pausa para contestar como B. Luego cambia los papeles.",
-        "Repite el diálogo una segunda vez. Intenta mirar menos el texto y recordar las respuestas."
+      "capitulo": "Diálogo",
+      "kicker": "DIÁLOGO",
+      "tablero": [
+        {
+          "t": "LECCIÓN 04",
+          "e": "nota"
+        },
+        {
+          "t": "Diálogo",
+          "e": "grande"
+        },
+        {
+          "t": "Oraciones fáciles 1",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Imagina una situación relacionada con oraciones fáciles 1. Escucha la conversación completa e intenta entender la idea general."
+        },
+        {
+          "d": "A: Hello! How can I help you? B: Hi. I am ready. A: Of course. B: Thank you. A: You're welcome. Is there anything else? B: No, that's all. Thanks for your help. A: Have a nice day! B: You too. Goodbye!"
+        },
+        {
+          "d": "Interpreta la parte A en voz alta y deja una pausa para contestar como B. Luego cambia los papeles."
+        },
+        {
+          "d": "Repite el diálogo una segunda vez. Intenta mirar menos el texto y recordar las respuestas."
+        }
       ]
     },
     {
-      "nombre": "Reto",
-      "guion": [
-        "Responde en voz alta y haz una pausa antes de mirar la respuesta.",
-        "Pregunta: ¿Cuál es la frase principal de hoy? Respuesta: I am ready..",
-        "Pregunta: ¿Cómo pedirías ayuda? Respuesta: Could you help me, please?",
-        "Pregunta: ¿Cómo pedirías que repitan algo? Respuesta: Could you say that again, please?",
-        "Si te equivocaste, escucha la respuesta, repítela y vuelve a intentarlo."
+      "capitulo": "Reto",
+      "kicker": "RETO",
+      "tablero": [
+        {
+          "t": "LECCIÓN 04",
+          "e": "nota"
+        },
+        {
+          "t": "Reto",
+          "e": "grande"
+        },
+        {
+          "t": "Oraciones fáciles 1",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Responde en voz alta y haz una pausa antes de mirar la respuesta."
+        },
+        {
+          "d": "Pregunta: ¿Cuál es la frase principal de hoy? Respuesta: I am ready.."
+        },
+        {
+          "d": "Pregunta: ¿Cómo pedirías ayuda? Respuesta: Could you help me, please?"
+        },
+        {
+          "d": "Pregunta: ¿Cómo pedirías que repitan algo? Respuesta: Could you say that again, please?"
+        },
+        {
+          "d": "Si te equivocaste, escucha la respuesta, repítela y vuelve a intentarlo."
+        }
       ]
     },
     {
-      "nombre": "Práctica guiada",
-      "guion": [
-        "Haremos tres rondas. En la primera, repite después de Sara. En la segunda, espera tres segundos e intenta recordar. En la tercera, imagina que tienes delante a una persona real.",
-        "Ronda uno: I am ready.. Repite. I am ready.. Una vez más.",
-        "Ronda dos: recuerda «Estoy listo o lista.» y dilo en inglés antes de leer la respuesta. Respuesta: I am ready..",
-        "Ronda tres: di la frase principal con naturalidad. Crea otra frase usando estas expresiones: I am ready, I need help, I like it.",
-        "Haz una pausa de diez segundos. Piensa en la frase que más necesitas en tu vida diaria y dilo en inglés sin ayuda."
+      "capitulo": "Práctica guiada",
+      "kicker": "PRÁCTICA GUIADA",
+      "tablero": [
+        {
+          "t": "LECCIÓN 04",
+          "e": "nota"
+        },
+        {
+          "t": "Práctica guiada",
+          "e": "grande"
+        },
+        {
+          "t": "Oraciones fáciles 1",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Haremos tres rondas. En la primera, repite después de Sara. En la segunda, espera tres segundos e intenta recordar. En la tercera, imagina que tienes delante a una persona real."
+        },
+        {
+          "d": "Ronda uno: I am ready.. Repite. I am ready.. Una vez más."
+        },
+        {
+          "d": "Ronda dos: recuerda «Estoy listo o lista.» y dilo en inglés antes de leer la respuesta. Respuesta: I am ready.."
+        },
+        {
+          "d": "Ronda tres: di la frase principal con naturalidad. Crea otra frase usando estas expresiones: I am ready, I need help, I like it."
+        },
+        {
+          "d": "Haz una pausa de diez segundos. Piensa en la frase que más necesitas en tu vida diaria y dilo en inglés sin ayuda."
+        }
       ]
     },
     {
-      "nombre": "Resumen",
-      "guion": [
-        "Hoy practicaste cómo practicar frases fáciles. Las expresiones clave fueron: I am ready, I need help, I like it, come here. La frase principal es: I am ready., que significa «Estoy listo o lista.».",
-        "Para recordar mejor, practica tres veces: una ahora, otra más tarde y otra mañana. Si puedes, escribe la frase y crea un ejemplo personal.",
-        "No necesitas hacerlo perfecto; necesitas volver a practicar. Cada frase que logras decir sin ayuda es un avance.",
-        "Soy Sara y esto fue Inglés con Sara, lección 4 de 50. Gracias por practicar conmigo. ¡Nos vemos en la próxima lección!"
+      "capitulo": "Resumen",
+      "kicker": "RESUMEN",
+      "tablero": [
+        {
+          "t": "LECCIÓN 04",
+          "e": "nota"
+        },
+        {
+          "t": "Resumen",
+          "e": "grande"
+        },
+        {
+          "t": "Oraciones fáciles 1",
+          "e": "medio"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Hoy practicaste cómo practicar frases fáciles. Las expresiones clave fueron: I am ready, I need help, I like it, come here. La frase principal es: I am ready., que significa «Estoy listo o lista.»."
+        },
+        {
+          "d": "Para recordar mejor, practica tres veces: una ahora, otra más tarde y otra mañana. Si puedes, escribe la frase y crea un ejemplo personal."
+        },
+        {
+          "d": "No necesitas hacerlo perfecto; necesitas volver a practicar. Cada frase que logras decir sin ayuda es un avance."
+        },
+        {
+          "d": "Soy Sara y esto fue Inglés con Sara, lección 4 de 50. Gracias por practicar conmigo. ¡Nos vemos en la próxima lección!"
+        }
       ]
     }
   ],
