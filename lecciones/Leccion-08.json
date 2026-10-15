@@ -1,0 +1,99 @@
+{
+  "numero": 8,
+  "canal": "INGLÉS CON SARA",
+  "titulo": "Oraciones fáciles 2",
+  "objetivo": "responder con frases cortas",
+  "minutos_objetivo": "8–9",
+  "duracion_objetivo_segundos": 510,
+  "tipo": "oraciones_faciles",
+  "vocabulario": [
+    "I don't know",
+    "wait a minute",
+    "that's fine",
+    "no problem"
+  ],
+  "frase_principal": {
+    "ingles": "I don't know.",
+    "espanol": "No lo sé."
+  },
+  "escenas": [
+    {
+      "nombre": "Introducción",
+      "guion": [
+        "¡Hola! Soy Sara y esto es Inglés con Sara. Hoy vamos a responder con frases cortas. No necesitas hablar perfecto para empezar. Escucha, repite y practica conmigo.",
+        "Prepara tu voz. Cuando escuches una frase, repítela en voz alta. Si necesitas más tiempo, pausa el vídeo. Equivocarse es parte natural de aprender.",
+        "Al final podrás usar expresiones útiles en una situación cotidiana. Aprenderemos palabras, construiremos frases y practicaremos una conversación."
+      ]
+    },
+    {
+      "nombre": "Vocabulario",
+      "guion": [
+        "Escucha y repite estas expresiones: I don't know, wait a minute, that's fine, no problem. Di cada una dos veces. Ahora intenta recordarlas sin mirar.",
+        "Segunda vuelta: repite la lista otra vez. Si una expresión no sale, escucha la respuesta y vuelve a intentarlo.",
+        "Piensa cuál de estas palabras usarías primero en una situación real. Crea una frase sencilla en inglés."
+      ]
+    },
+    {
+      "nombre": "Frase principal",
+      "guion": [
+        "La frase principal de hoy es: I don't know.. Significa: No lo sé..",
+        "Primera repetición: I don't know.. Segunda repetición: I don't know.. Tercera repetición: I don't know..",
+        "Escucha el ritmo de la frase. Primero repite despacio, luego a velocidad natural. Intenta unir las palabras.",
+        "Ahora intenta decirla de memoria. Piensa en una situación real en la que podrías usarla."
+      ]
+    },
+    {
+      "nombre": "Construimos frases",
+      "guion": [
+        "Aprender una estructura te permite crear más de una frase. Escucha el modelo y repítelo.",
+        "Modelo uno: I don't know.. Repite dos veces.",
+        "Modelo dos: Could you help me, please? Significa «¿Podrías ayudarme, por favor?». Repítelo dos veces.",
+        "Modelo tres: Could you say that again, please? Significa «¿Podrías repetirlo, por favor?». Repítelo dos veces.",
+        "Modelo cuatro: Thank you. Have a nice day! Repítelo con voz clara.",
+        "Oración fácil: I am ready. Estoy listo o lista. Repite dos veces.",
+        "Oración fácil: I need help. Necesito ayuda. Repite dos veces.",
+        "Oración fácil: Wait a minute. Espera un minuto. Repite dos veces.",
+        "Oración fácil: That's fine. Está bien. Repite dos veces."
+      ]
+    },
+    {
+      "nombre": "Diálogo",
+      "guion": [
+        "Imagina una situación relacionada con oraciones fáciles 2. Escucha la conversación completa e intenta entender la idea general.",
+        "A: Hello! How can I help you? B: Hi. I don't know. A: Of course. B: Thank you. A: You're welcome. Is there anything else? B: No, that's all. Thanks for your help. A: Have a nice day! B: You too. Goodbye!",
+        "Interpreta la parte A en voz alta y deja una pausa para contestar como B. Luego cambia los papeles.",
+        "Repite el diálogo una segunda vez. Intenta mirar menos el texto y recordar las respuestas."
+      ]
+    },
+    {
+      "nombre": "Reto",
+      "guion": [
+        "Responde en voz alta y haz una pausa antes de mirar la respuesta.",
+        "Pregunta: ¿Cuál es la frase principal de hoy? Respuesta: I don't know..",
+        "Pregunta: ¿Cómo pedirías ayuda? Respuesta: Could you help me, please?",
+        "Pregunta: ¿Cómo pedirías que repitan algo? Respuesta: Could you say that again, please?",
+        "Si te equivocaste, escucha la respuesta, repítela y vuelve a intentarlo."
+      ]
+    },
+    {
+      "nombre": "Práctica guiada",
+      "guion": [
+        "Haremos tres rondas. En la primera, repite después de Sara. En la segunda, espera tres segundos e intenta recordar. En la tercera, imagina que tienes delante a una persona real.",
+        "Ronda uno: I don't know.. Repite. I don't know.. Una vez más.",
+        "Ronda dos: recuerda «No lo sé.» y dilo en inglés antes de leer la respuesta. Respuesta: I don't know..",
+        "Ronda tres: di la frase principal con naturalidad. Crea otra frase usando estas expresiones: I don't know, wait a minute, that's fine.",
+        "Haz una pausa de diez segundos. Piensa en la frase que más necesitas en tu vida diaria y dilo en inglés sin ayuda."
+      ]
+    },
+    {
+      "nombre": "Resumen",
+      "guion": [
+        "Hoy practicaste cómo responder con frases cortas. Las expresiones clave fueron: I don't know, wait a minute, that's fine, no problem. La frase principal es: I don't know., que significa «No lo sé.».",
+        "Para recordar mejor, practica tres veces: una ahora, otra más tarde y otra mañana. Si puedes, escribe la frase y crea un ejemplo personal.",
+        "No necesitas hacerlo perfecto; necesitas volver a practicar. Cada frase que logras decir sin ayuda es un avance.",
+        "Soy Sara y esto fue Inglés con Sara, lección 8 de 50. Gracias por practicar conmigo. ¡Nos vemos en la próxima lección!"
+      ]
+    }
+  ],
+  "nota_produccion": "Duración objetivo 8–9 minutos. La duración real depende del motor de voz, las pausas y las repeticiones; medirla tras generar el audio."
+}
