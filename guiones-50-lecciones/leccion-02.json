@@ -1,0 +1,311 @@
+{
+  "numero": 2,
+  "canal": "INGLÉS CON SARA",
+  "titulo": "Rutina diaria: hablar de tu rutina diaria",
+  "minimo_minutos": 8,
+  "maximo_minutos": 9,
+  "duracion_objetivo_segundos": 510,
+  "tipo": "leccion_practica",
+  "descripcion": "Lección 2 de 50. Aprende a hablar de tu rutina diaria con vocabulario, ejemplos, diálogo y práctica en voz alta.",
+  "vocabulario": [
+    "wake up",
+    "get dressed",
+    "have breakfast",
+    "go to work"
+  ],
+  "frase_principal": {
+    "ingles": "I wake up at seven every day.",
+    "espanol": "Me despierto a las siete todos los días."
+  },
+  "escenas": [
+    {
+      "capitulo": "Empezamos",
+      "kicker": "LECCIÓN 2 · INGLÉS CON SARA",
+      "tablero": [
+        {
+          "t": "LECCIÓN 2",
+          "e": "grande"
+        },
+        {
+          "t": "Rutina diaria",
+          "e": "nota"
+        },
+        {
+          "t": "hablar de tu rutina diaria",
+          "e": "nota"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "¡Hola! Soy Sara y esto es Inglés con Sara. Hoy vamos a aprender a hablar de tu rutina diaria. No necesitas hablar perfecto para empezar: escucha, repite y practica conmigo."
+        },
+        {
+          "d": "Prepara tu voz. Cuando escuches una frase, repítela en voz alta. Si necesitas más tiempo, pausa el vídeo. Equivocarse es parte natural de aprender un idioma."
+        },
+        {
+          "d": "Al final podrás usar expresiones útiles en una situación cotidiana. Primero aprenderemos palabras, luego construiremos frases y terminaremos con un diálogo y un reto de memoria."
+        }
+      ]
+    },
+    {
+      "capitulo": "Vocabulario clave",
+      "kicker": "ESCUCHA Y REPITE",
+      "tablero": [
+        {
+          "t": "Palabras clave",
+          "e": "grande"
+        },
+        {
+          "t": "Rutina diaria",
+          "e": "nota"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Escucha cada palabra y piensa en su significado. Después repítela dos veces. No intentes memorizarlo todo de golpe; concéntrate en reconocer las expresiones cuando vuelvas a escucharlas."
+        },
+        {
+          "reto": {
+            "p": "¿Cómo se dice «wake up»?",
+            "r": "wake up",
+            "es": "Expresión útil para hablar de tu rutina diaria.",
+            "pron": "wake up",
+            "seg": 5
+          }
+        },
+        {
+          "reto": {
+            "p": "¿Cómo se dice «get dressed»?",
+            "r": "get dressed",
+            "es": "Expresión útil para hablar de tu rutina diaria.",
+            "pron": "get dressed",
+            "seg": 5
+          }
+        },
+        {
+          "reto": {
+            "p": "¿Cómo se dice «have breakfast»?",
+            "r": "have breakfast",
+            "es": "Expresión útil para hablar de tu rutina diaria.",
+            "pron": "have breakfast",
+            "seg": 5
+          }
+        },
+        {
+          "reto": {
+            "p": "¿Cómo se dice «go to work»?",
+            "r": "go to work",
+            "es": "Expresión útil para hablar de tu rutina diaria.",
+            "pron": "go to work",
+            "seg": 5
+          }
+        },
+        {
+          "d": "Segunda vuelta: vuelve a decir cada expresión sin mirar la lista. Si alguna no sale, escucha la respuesta y repítela otra vez."
+        }
+      ]
+    },
+    {
+      "capitulo": "La frase principal",
+      "kicker": "UNA FRASE PARA LA VIDA REAL",
+      "tablero": [
+        {
+          "t": "I wake up at seven every day.",
+          "e": "grande"
+        },
+        {
+          "t": "Me despierto a las siete todos los días.",
+          "e": "nota"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "La frase principal de hoy es: I wake up at seven every day. Significa: Me despierto a las siete todos los días."
+        },
+        {
+          "d": "Escucha el ritmo de la frase. Primero repite despacio, luego a velocidad natural. Intenta unir las palabras sin hacer una pausa después de cada una."
+        },
+        {
+          "d": "Primera repetición: I wake up at seven every day. Segunda repetición: I wake up at seven every day. Tercera repetición: I wake up at seven every day."
+        },
+        {
+          "d": "Ahora mira hacia otro lado e intenta decirla de memoria. Piensa en una situación real en la que podrías usarla."
+        }
+      ]
+    },
+    {
+      "capitulo": "Construimos frases",
+      "kicker": "CAMBIA Y PRACTICA",
+      "tablero": [
+        {
+          "t": "Construye frases",
+          "e": "grande"
+        },
+        {
+          "t": "Un patrón puede servir para muchas situaciones",
+          "e": "nota"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Aprender una estructura te permite crear más de una frase. Escucha el modelo y repítelo. Después cambia una palabra para adaptarlo a tu vida."
+        },
+        {
+          "d": "Modelo 1: I wake up at seven every day. Pausa un momento y repítelo dos veces."
+        },
+        {
+          "d": "Modelo 2: Could you help me, please? Pausa un momento y repítelo dos veces."
+        },
+        {
+          "d": "Modelo 3: Could you say that again, please? Pausa un momento y repítelo dos veces."
+        },
+        {
+          "d": "Modelo 4: Thank you. Have a nice day! Pausa un momento y repítelo dos veces."
+        },
+        {
+          "d": "Modelo 5: I would like to practice English. Pausa un momento y repítelo dos veces."
+        },
+        {
+          "d": "Ronda adicional: di cada modelo con voz clara. Ahora elige el que te resulte más útil y repítelo tres veces."
+        }
+      ]
+    },
+    {
+      "capitulo": "Diálogo",
+      "kicker": "ESCUCHA LA CONVERSACIÓN",
+      "tablero": [
+        {
+          "t": "Situación real",
+          "e": "grande"
+        },
+        {
+          "t": "Primero escucha; después toma tu turno",
+          "e": "nota"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Imagina que estás en una situación relacionada con rutina diaria. Escucha la conversación completa e intenta entender la idea general."
+        },
+        {
+          "d": "A: Hello! How can I help you? B: Hi. I wake up at seven every day. A: Of course. B: Thank you. A: You're welcome. Is there anything else? B: No, that's all. Thanks for your help. A: Have a nice day! B: You too. Goodbye!"
+        },
+        {
+          "d": "Ahora interpreta la parte A en voz alta y deja una pausa para contestar como B. Luego cambia los papeles. Presta atención a las expresiones de cortesía: hacen que una conversación suene natural."
+        },
+        {
+          "d": "Repite el diálogo una segunda vez. Intenta mirar menos el texto y recordar las respuestas. No te preocupes por el acento: prioriza que las palabras se entiendan."
+        }
+      ]
+    },
+    {
+      "capitulo": "Reto de escucha",
+      "kicker": "PIENSA ANTES DE RESPONDER",
+      "tablero": [
+        {
+          "t": "Tu turno",
+          "e": "grande"
+        },
+        {
+          "t": "Responde en voz alta",
+          "e": "nota"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Voy a hacerte unas preguntas. Deténte un momento antes de mirar la respuesta. Lo importante es recuperar el inglés de la memoria."
+        },
+        {
+          "reto": {
+            "p": "¿Cuál es la frase principal de hoy?",
+            "r": "I wake up at seven every day.",
+            "es": "Me despierto a las siete todos los días.",
+            "pron": "I wake up at seven every day.",
+            "seg": 7
+          }
+        },
+        {
+          "reto": {
+            "p": "¿Cómo pedirías ayuda de forma educada?",
+            "r": "Could you help me, please?",
+            "es": "¿Podrías ayudarme, por favor?",
+            "pron": "Could you help me, please",
+            "seg": 7
+          }
+        },
+        {
+          "reto": {
+            "p": "¿Cómo pedirías que repitan algo?",
+            "r": "Could you say that again, please?",
+            "es": "¿Podrías repetirlo, por favor?",
+            "pron": "Could you say that again, please",
+            "seg": 7
+          }
+        },
+        {
+          "d": "Si te equivocaste, escucha la respuesta, repítela y vuelve a intentarlo. Cada intento entrena tu memoria."
+        }
+      ]
+    },
+    {
+      "capitulo": "Práctica guiada",
+      "kicker": "AHORA HABLAS TÚ",
+      "tablero": [
+        {
+          "t": "Práctica guiada",
+          "e": "grande"
+        },
+        {
+          "t": "Repetición con pausas",
+          "e": "nota"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Haremos tres rondas. En la primera, repite justo después de leer. En la segunda, espera tres segundos e intenta recordar. En la tercera, imagina que tienes delante a una persona real."
+        },
+        {
+          "d": "Ronda uno: I wake up at seven every day. Repite. I wake up at seven every day. Una vez más."
+        },
+        {
+          "d": "Ronda dos: recuerda «Me despierto a las siete todos los días.» y dilo en inglés antes de leer la respuesta. Respuesta: I wake up at seven every day."
+        },
+        {
+          "d": "Ronda tres: di la frase principal con naturalidad. Después crea una frase propia usando una de estas expresiones: wake up, get dressed, have breakfast."
+        },
+        {
+          "d": "Haz una pausa de diez segundos. Durante la pausa, piensa en la frase que más necesitas en tu vida diaria. Cuando vuelvas, dilo en inglés sin ayuda."
+        }
+      ]
+    },
+    {
+      "capitulo": "Resumen",
+      "kicker": "REPASO Y DESPEDIDA",
+      "tablero": [
+        {
+          "t": "Lo que aprendiste",
+          "e": "grande"
+        },
+        {
+          "t": "hablar de tu rutina diaria",
+          "e": "nota"
+        }
+      ],
+      "pasos": [
+        {
+          "d": "Hoy practicaste cómo hablar de tu rutina diaria. Las expresiones clave fueron: wake up, get dressed, have breakfast, go to work. La frase principal es: I wake up at seven every day., que significa «Me despierto a las siete todos los días.»."
+        },
+        {
+          "d": "Para recordar mejor, practica tres veces: una ahora, otra más tarde y otra mañana. Si puedes, escribe la frase y crea un ejemplo personal."
+        },
+        {
+          "d": "Recuerda que aprender un idioma es un proceso. No necesitas hacerlo perfecto; necesitas volver a practicar. Cada frase que logras decir sin ayuda es un avance."
+        },
+        {
+          "d": "Soy Sara y esto fue Inglés con Sara, lección 2 de 50. Gracias por practicar conmigo. ¡Nos vemos en la próxima lección!"
+        }
+      ]
+    }
+  ],
+  "nota_produccion": "Duración objetivo 8–9 minutos. Confirmar la duración real con el motor de voz. Mantener las pausas de respuesta y repetir las frases señaladas; no acelerar para acortar el vídeo."
+}
